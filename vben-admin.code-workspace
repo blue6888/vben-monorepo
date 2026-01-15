@@ -61,7 +61,7 @@
       "path": "packages/@core/base/design",
     },
     {
-      "name": "@web-core/icons",
+      "name": "@web/icons",
       "path": "packages/@core/base/icons",
     },
     {

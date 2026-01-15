@@ -27,9 +27,6 @@ catalogs:
     '@eslint/js':
       specifier: ^9.39.1
       version: 9.39.2
-    '@faker-js/faker':
-      specifier: ^9.9.0
-      version: 9.9.0
     '@iconify/json':
       specifier: ^2.2.406
       version: 2.2.417
@@ -66,9 +63,6 @@ catalogs:
     '@tailwindcss/typography':
       specifier: ^0.5.16
       version: 0.5.19
-    '@tanstack/vue-query':
-      specifier: ^5.91.0
-      version: 5.92.1
     '@tanstack/vue-store':
       specifier: ^0.8.0
       version: 0.8.0
@@ -81,12 +75,6 @@ catalogs:
     '@types/html-minifier-terser':
       specifier: ^7.0.2
       version: 7.0.2
-    '@types/json-bigint':
-      specifier: ^1.0.4
-      version: 1.0.4
-    '@types/jsonwebtoken':
-      specifier: ^9.0.10
-      version: 9.0.10
     '@types/lodash.clonedeep':
       specifier: ^4.5.9
       version: 4.5.9
@@ -108,9 +96,6 @@ catalogs:
     '@types/postcss-import':
       specifier: ^14.0.3
       version: 14.0.3
-    '@types/qrcode':
-      specifier: ^1.5.5
-      version: 1.5.6
     '@types/qs':
       specifier: ^6.14.0
       version: 6.14.0
@@ -123,9 +108,6 @@ catalogs:
     '@typescript-eslint/parser':
       specifier: ^8.46.4
       version: 8.50.1
-    '@vee-validate/zod':
-      specifier: ^4.15.1
-      version: 4.15.1
     '@vitejs/plugin-vue':
       specifier: ^6.0.1
       version: 6.0.3
@@ -141,9 +123,6 @@ catalogs:
     '@vueuse/core':
       specifier: ^13.4.0
       version: 13.9.0
-    '@vueuse/integrations':
-      specifier: ^14.0.0
-      version: 14.1.0
     '@vueuse/motion':
       specifier: ^3.0.3
       version: 3.0.3
@@ -276,9 +255,6 @@ catalogs:
     globals:
       specifier: ^16.3.0
       version: 16.5.0
-    h3:
-      specifier: ^1.15.3
-      version: 1.15.4
     happy-dom:
       specifier: ^17.6.3
       version: 17.6.3
@@ -288,15 +264,9 @@ catalogs:
     is-ci:
       specifier: ^4.1.0
       version: 4.1.0
-    json-bigint:
-      specifier: ^1.0.0
-      version: 1.0.0
     jsonc-eslint-parser:
       specifier: ^2.4.1
       version: 2.4.2
-    jsonwebtoken:
-      specifier: ^9.0.2
-      version: 9.0.3
     lefthook:
       specifier: ^1.13.6
       version: 1.13.6
@@ -351,9 +321,6 @@ catalogs:
     publint:
       specifier: ^0.3.12
       version: 0.3.16
-    qrcode:
-      specifier: ^1.5.4
-      version: 1.5.4
     qs:
       specifier: ^6.14.0
       version: 6.14.0
@@ -417,15 +384,9 @@ catalogs:
     tailwindcss-animate:
       specifier: ^1.0.7
       version: 1.0.7
-    tdesign-vue-next:
-      specifier: ^1.17.1
-      version: 1.17.7
     theme-colors:
       specifier: ^0.1.0
       version: 0.1.0
-    tippy.js:
-      specifier: ^6.3.7
-      version: 6.3.7
     turbo:
       specifier: ^2.6.1
       version: 2.7.2
@@ -468,15 +429,9 @@ catalogs:
     vue-i18n:
       specifier: ^11.1.7
       version: 11.2.7
-    vue-json-viewer:
-      specifier: ^3.0.4
-      version: 3.0.4
     vue-router:
       specifier: ^4.5.1
       version: 4.6.4
-    vue-tippy:
-      specifier: ^6.7.1
-      version: 6.7.1
     vue-tsc:
       specifier: ^3.1.4
       version: 3.2.1
@@ -489,12 +444,6 @@ catalogs:
     watermark-js-plus:
       specifier: ^1.6.2
       version: 1.6.3
-    zod:
-      specifier: ^3.25.67
-      version: 3.25.76
-    zod-defaults:
-      specifier: 0.1.3
-      version: 0.1.3
 
 overrides:
   '@ast-grep/napi': ^0.39.9
@@ -606,48 +555,20 @@ importers:
         specifier: 'catalog:'
         version: 3.2.1(typescript@5.9.3)
 
-  apps/backend-mock:
-    dependencies:
-      '@faker-js/faker':
-        specifier: 'catalog:'
-        version: 9.9.0
-      jsonwebtoken:
-        specifier: 'catalog:'
-        version: 9.0.3
-      nitropack:
-        specifier: 'catalog:'
-        version: 2.12.9
-    devDependencies:
-      '@types/jsonwebtoken':
-        specifier: 'catalog:'
-        version: 9.0.10
-      h3:
-        specifier: 'catalog:'
-        version: 1.15.4
-
   apps/web-antd:
     dependencies:
       '@vueuse/core':
         specifier: 'catalog:'
         version: 13.9.0(vue@3.5.26(typescript@5.9.3))
-      '@web/access':
-        specifier: workspace:*
-        version: link:../../packages/effects/access
-      '@web/common-ui':
-        specifier: workspace:*
-        version: link:../../packages/effects/common-ui
       '@web/constants':
         specifier: workspace:*
         version: link:../../packages/constants
       '@web/hooks':
         specifier: workspace:*
-        version: link:../../packages/effects/hooks
+        version: link:../../packages/@core/hooks
       '@web/icons':
         specifier: workspace:*
         version: link:../../packages/icons
-      '@web/layouts':
-        specifier: workspace:*
-        version: link:../../packages/effects/layouts
       '@web/locales':
         specifier: workspace:*
         version: link:../../packages/locales
@@ -663,15 +584,12 @@ importers:
       '@web/stores':
         specifier: workspace:*
         version: link:../../packages/stores
-      '@web/styles':
-        specifier: workspace:*
-        version: link:../../packages/styles
       '@web/types':
         specifier: workspace:*
         version: link:../../packages/types
       '@web/utils':
         specifier: workspace:*
-        version: link:../../packages/utils
+        version: link:../../packages/@core/utils
       ant-design-vue:
         specifier: 'catalog:'
         version: 4.2.6(vue@3.5.26(typescript@5.9.3))
@@ -681,72 +599,6 @@ importers:
       pinia:
         specifier: ^3.0.3
         version: 3.0.4(typescript@5.9.3)(vue@3.5.26(typescript@5.9.3))
-      vue:
-        specifier: ^3.5.24
-        version: 3.5.26(typescript@5.9.3)
-      vue-router:
-        specifier: 'catalog:'
-        version: 4.6.4(vue@3.5.26(typescript@5.9.3))
-
-  apps/web-tdesign:
-    dependencies:
-      '@vueuse/core':
-        specifier: 'catalog:'
-        version: 13.9.0(vue@3.5.26(typescript@5.9.3))
-      '@web/access':
-        specifier: workspace:*
-        version: link:../../packages/effects/access
-      '@web/common-ui':
-        specifier: workspace:*
-        version: link:../../packages/effects/common-ui
-      '@web/constants':
-        specifier: workspace:*
-        version: link:../../packages/constants
-      '@web/hooks':
-        specifier: workspace:*
-        version: link:../../packages/effects/hooks
-      '@web/icons':
-        specifier: workspace:*
-        version: link:../../packages/icons
-      '@web/layouts':
-        specifier: workspace:*
-        version: link:../../packages/effects/layouts
-      '@web/locales':
-        specifier: workspace:*
-        version: link:../../packages/locales
-      '@web/plugins':
-        specifier: workspace:*
-        version: link:../../packages/effects/plugins
-      '@web/preferences':
-        specifier: workspace:*
-        version: link:../../packages/preferences
-      '@web/request':
-        specifier: workspace:*
-        version: link:../../packages/effects/request
-      '@web/stores':
-        specifier: workspace:*
-        version: link:../../packages/stores
-      '@web/styles':
-        specifier: workspace:*
-        version: link:../../packages/styles
-      '@web/types':
-        specifier: workspace:*
-        version: link:../../packages/types
-      '@web/utils':
-        specifier: workspace:*
-        version: link:../../packages/utils
-      dayjs:
-        specifier: 'catalog:'
-        version: 1.11.19
-      es-toolkit:
-        specifier: 'catalog:'
-        version: 1.43.0
-      pinia:
-        specifier: ^3.0.3
-        version: 3.0.4(typescript@5.9.3)(vue@3.5.26(typescript@5.9.3))
-      tdesign-vue-next:
-        specifier: 'catalog:'
-        version: 1.17.7(vue@3.5.26(typescript@5.9.3))
       vue:
         specifier: ^3.5.24
         version: 3.5.26(typescript@5.9.3)
@@ -1081,18 +933,6 @@ importers:
 
   packages/@core/base/design: {}
 
-  packages/@core/base/icons:
-    dependencies:
-      '@iconify/vue':
-        specifier: 'catalog:'
-        version: 5.0.0(vue@3.5.26(typescript@5.9.3))
-      lucide-vue-next:
-        specifier: 'catalog:'
-        version: 0.553.0(vue@3.5.26(typescript@5.9.3))
-      vue:
-        specifier: ^3.5.24
-        version: 3.5.26(typescript@5.9.3)
-
   packages/@core/base/shared:
     dependencies:
       '@ctrl/tinycolor':
@@ -1176,6 +1016,36 @@ importers:
         specifier: 'catalog:'
         version: 1.15.9
 
+  packages/@core/hooks:
+    dependencies:
+      '@vueuse/core':
+        specifier: 'catalog:'
+        version: 13.9.0(vue@3.5.26(typescript@5.9.3))
+      '@web-core/composables':
+        specifier: workspace:*
+        version: link:../composables
+      '@web/preferences':
+        specifier: workspace:*
+        version: link:../../preferences
+      '@web/stores':
+        specifier: workspace:*
+        version: link:../../stores
+      '@web/types':
+        specifier: workspace:*
+        version: link:../../types
+      '@web/utils':
+        specifier: workspace:*
+        version: link:../utils
+      vue:
+        specifier: ^3.5.24
+        version: 3.5.26(typescript@5.9.3)
+      vue-router:
+        specifier: 'catalog:'
+        version: 4.6.4(vue@3.5.26(typescript@5.9.3))
+      watermark-js-plus:
+        specifier: 'catalog:'
+        version: 1.6.3
+
   packages/@core/preferences:
     dependencies:
       '@vueuse/core':
@@ -1191,345 +1061,23 @@ importers:
         specifier: ^3.5.24
         version: 3.5.26(typescript@5.9.3)
 
-  packages/@core/ui-kit/form-ui:
+  packages/@core/utils:
     dependencies:
-      '@vee-validate/zod':
-        specifier: 'catalog:'
-        version: 4.15.1(vue@3.5.26(typescript@5.9.3))(zod@3.25.76)
-      '@vueuse/core':
-        specifier: 'catalog:'
-        version: 13.9.0(vue@3.5.26(typescript@5.9.3))
-      '@web-core/composables':
-        specifier: workspace:*
-        version: link:../../composables
-      '@web-core/icons':
-        specifier: workspace:*
-        version: link:../../base/icons
-      '@web-core/shadcn-ui':
-        specifier: workspace:*
-        version: link:../shadcn-ui
       '@web-core/shared':
         specifier: workspace:*
-        version: link:../../base/shared
+        version: link:../base/shared
       '@web-core/typings':
         specifier: workspace:*
-        version: link:../../base/typings
-      vee-validate:
+        version: link:../base/typings
+      vue-router:
         specifier: 'catalog:'
-        version: 4.15.1(vue@3.5.26(typescript@5.9.3))
-      vue:
-        specifier: ^3.5.24
-        version: 3.5.26(typescript@5.9.3)
-      zod:
-        specifier: 'catalog:'
-        version: 3.25.76
-      zod-defaults:
-        specifier: 'catalog:'
-        version: 0.1.3(zod@3.25.76)
-
-  packages/@core/ui-kit/layout-ui:
-    dependencies:
-      '@vueuse/core':
-        specifier: 'catalog:'
-        version: 13.9.0(vue@3.5.26(typescript@5.9.3))
-      '@web-core/composables':
-        specifier: workspace:*
-        version: link:../../composables
-      '@web-core/icons':
-        specifier: workspace:*
-        version: link:../../base/icons
-      '@web-core/shadcn-ui':
-        specifier: workspace:*
-        version: link:../shadcn-ui
-      '@web-core/shared':
-        specifier: workspace:*
-        version: link:../../base/shared
-      '@web-core/typings':
-        specifier: workspace:*
-        version: link:../../base/typings
-      vue:
-        specifier: ^3.5.24
-        version: 3.5.26(typescript@5.9.3)
-
-  packages/@core/ui-kit/menu-ui:
-    dependencies:
-      '@vueuse/core':
-        specifier: 'catalog:'
-        version: 13.9.0(vue@3.5.26(typescript@5.9.3))
-      '@web-core/composables':
-        specifier: workspace:*
-        version: link:../../composables
-      '@web-core/icons':
-        specifier: workspace:*
-        version: link:../../base/icons
-      '@web-core/shadcn-ui':
-        specifier: workspace:*
-        version: link:../shadcn-ui
-      '@web-core/shared':
-        specifier: workspace:*
-        version: link:../../base/shared
-      '@web-core/typings':
-        specifier: workspace:*
-        version: link:../../base/typings
-      vue:
-        specifier: ^3.5.24
-        version: 3.5.26(typescript@5.9.3)
-
-  packages/@core/ui-kit/popup-ui:
-    dependencies:
-      '@vueuse/core':
-        specifier: 'catalog:'
-        version: 13.9.0(vue@3.5.26(typescript@5.9.3))
-      '@web-core/composables':
-        specifier: workspace:*
-        version: link:../../composables
-      '@web-core/icons':
-        specifier: workspace:*
-        version: link:../../base/icons
-      '@web-core/shadcn-ui':
-        specifier: workspace:*
-        version: link:../shadcn-ui
-      '@web-core/shared':
-        specifier: workspace:*
-        version: link:../../base/shared
-      '@web-core/typings':
-        specifier: workspace:*
-        version: link:../../base/typings
-      vue:
-        specifier: ^3.5.24
-        version: 3.5.26(typescript@5.9.3)
-
-  packages/@core/ui-kit/shadcn-ui:
-    dependencies:
-      '@vueuse/core':
-        specifier: 'catalog:'
-        version: 13.9.0(vue@3.5.26(typescript@5.9.3))
-      '@web-core/composables':
-        specifier: workspace:*
-        version: link:../../composables
-      '@web-core/icons':
-        specifier: workspace:*
-        version: link:../../base/icons
-      '@web-core/shared':
-        specifier: workspace:*
-        version: link:../../base/shared
-      '@web-core/typings':
-        specifier: workspace:*
-        version: link:../../base/typings
-      class-variance-authority:
-        specifier: 'catalog:'
-        version: 0.7.1
-      lucide-vue-next:
-        specifier: 'catalog:'
-        version: 0.553.0(vue@3.5.26(typescript@5.9.3))
-      reka-ui:
-        specifier: 'catalog:'
-        version: 2.7.0(typescript@5.9.3)(vue@3.5.26(typescript@5.9.3))
-      vee-validate:
-        specifier: 'catalog:'
-        version: 4.15.1(vue@3.5.26(typescript@5.9.3))
-      vue:
-        specifier: ^3.5.24
-        version: 3.5.26(typescript@5.9.3)
-
-  packages/@core/ui-kit/tabs-ui:
-    dependencies:
-      '@vueuse/core':
-        specifier: 'catalog:'
-        version: 13.9.0(vue@3.5.26(typescript@5.9.3))
-      '@web-core/composables':
-        specifier: workspace:*
-        version: link:../../composables
-      '@web-core/icons':
-        specifier: workspace:*
-        version: link:../../base/icons
-      '@web-core/shadcn-ui':
-        specifier: workspace:*
-        version: link:../shadcn-ui
-      '@web-core/typings':
-        specifier: workspace:*
-        version: link:../../base/typings
-      vue:
-        specifier: ^3.5.24
-        version: 3.5.26(typescript@5.9.3)
+        version: 4.6.4(vue@3.5.26(typescript@5.9.3))
 
   packages/constants:
     dependencies:
       '@web-core/shared':
         specifier: workspace:*
         version: link:../@core/base/shared
-
-  packages/effects/access:
-    dependencies:
-      '@web/preferences':
-        specifier: workspace:*
-        version: link:../../preferences
-      '@web/stores':
-        specifier: workspace:*
-        version: link:../../stores
-      '@web/types':
-        specifier: workspace:*
-        version: link:../../types
-      '@web/utils':
-        specifier: workspace:*
-        version: link:../../utils
-      vue:
-        specifier: ^3.5.24
-        version: 3.5.26(typescript@5.9.3)
-
-  packages/effects/common-ui:
-    dependencies:
-      '@vueuse/core':
-        specifier: 'catalog:'
-        version: 13.9.0(vue@3.5.26(typescript@5.9.3))
-      '@vueuse/integrations':
-        specifier: 'catalog:'
-        version: 14.1.0(async-validator@4.2.5)(axios@1.13.2)(change-case@5.4.4)(focus-trap@7.7.0)(nprogress@0.2.0)(qrcode@1.5.4)(sortablejs@1.15.6)(vue@3.5.26(typescript@5.9.3))
-      '@web-core/form-ui':
-        specifier: workspace:*
-        version: link:../../@core/ui-kit/form-ui
-      '@web-core/popup-ui':
-        specifier: workspace:*
-        version: link:../../@core/ui-kit/popup-ui
-      '@web-core/preferences':
-        specifier: workspace:*
-        version: link:../../@core/preferences
-      '@web-core/shadcn-ui':
-        specifier: workspace:*
-        version: link:../../@core/ui-kit/shadcn-ui
-      '@web-core/shared':
-        specifier: workspace:*
-        version: link:../../@core/base/shared
-      '@web/constants':
-        specifier: workspace:*
-        version: link:../../constants
-      '@web/hooks':
-        specifier: workspace:*
-        version: link:../hooks
-      '@web/icons':
-        specifier: workspace:*
-        version: link:../../icons
-      '@web/locales':
-        specifier: workspace:*
-        version: link:../../locales
-      '@web/types':
-        specifier: workspace:*
-        version: link:../../types
-      json-bigint:
-        specifier: 'catalog:'
-        version: 1.0.0
-      qrcode:
-        specifier: 'catalog:'
-        version: 1.5.4
-      tippy.js:
-        specifier: 'catalog:'
-        version: 6.3.7
-      vue:
-        specifier: ^3.5.24
-        version: 3.5.26(typescript@5.9.3)
-      vue-json-viewer:
-        specifier: 'catalog:'
-        version: 3.0.4(vue@3.5.26(typescript@5.9.3))
-      vue-router:
-        specifier: 'catalog:'
-        version: 4.6.4(vue@3.5.26(typescript@5.9.3))
-      vue-tippy:
-        specifier: 'catalog:'
-        version: 6.7.1(vue@3.5.26(typescript@5.9.3))
-    devDependencies:
-      '@types/qrcode':
-        specifier: 'catalog:'
-        version: 1.5.6
-
-  packages/effects/hooks:
-    dependencies:
-      '@vueuse/core':
-        specifier: 'catalog:'
-        version: 13.9.0(vue@3.5.26(typescript@5.9.3))
-      '@web-core/composables':
-        specifier: workspace:*
-        version: link:../../@core/composables
-      '@web/preferences':
-        specifier: workspace:*
-        version: link:../../preferences
-      '@web/stores':
-        specifier: workspace:*
-        version: link:../../stores
-      '@web/types':
-        specifier: workspace:*
-        version: link:../../types
-      '@web/utils':
-        specifier: workspace:*
-        version: link:../../utils
-      vue:
-        specifier: ^3.5.24
-        version: 3.5.26(typescript@5.9.3)
-      vue-router:
-        specifier: 'catalog:'
-        version: 4.6.4(vue@3.5.26(typescript@5.9.3))
-      watermark-js-plus:
-        specifier: 'catalog:'
-        version: 1.6.3
-
-  packages/effects/layouts:
-    dependencies:
-      '@vueuse/core':
-        specifier: 'catalog:'
-        version: 13.9.0(vue@3.5.26(typescript@5.9.3))
-      '@web-core/composables':
-        specifier: workspace:*
-        version: link:../../@core/composables
-      '@web-core/form-ui':
-        specifier: workspace:*
-        version: link:../../@core/ui-kit/form-ui
-      '@web-core/layout-ui':
-        specifier: workspace:*
-        version: link:../../@core/ui-kit/layout-ui
-      '@web-core/menu-ui':
-        specifier: workspace:*
-        version: link:../../@core/ui-kit/menu-ui
-      '@web-core/popup-ui':
-        specifier: workspace:*
-        version: link:../../@core/ui-kit/popup-ui
-      '@web-core/shadcn-ui':
-        specifier: workspace:*
-        version: link:../../@core/ui-kit/shadcn-ui
-      '@web-core/shared':
-        specifier: workspace:*
-        version: link:../../@core/base/shared
-      '@web-core/tabs-ui':
-        specifier: workspace:*
-        version: link:../../@core/ui-kit/tabs-ui
-      '@web/constants':
-        specifier: workspace:*
-        version: link:../../constants
-      '@web/hooks':
-        specifier: workspace:*
-        version: link:../hooks
-      '@web/icons':
-        specifier: workspace:*
-        version: link:../../icons
-      '@web/locales':
-        specifier: workspace:*
-        version: link:../../locales
-      '@web/preferences':
-        specifier: workspace:*
-        version: link:../../preferences
-      '@web/stores':
-        specifier: workspace:*
-        version: link:../../stores
-      '@web/types':
-        specifier: workspace:*
-        version: link:../../types
-      '@web/utils':
-        specifier: workspace:*
-        version: link:../../utils
-      vue:
-        specifier: ^3.5.24
-        version: 3.5.26(typescript@5.9.3)
-      vue-router:
-        specifier: 'catalog:'
-        version: 4.6.4(vue@3.5.26(typescript@5.9.3))
 
   packages/effects/plugins:
     dependencies:
@@ -1539,18 +1087,15 @@ importers:
       '@vueuse/motion':
         specifier: 'catalog:'
         version: 3.0.3(magicast@0.5.1)(vue@3.5.26(typescript@5.9.3))
-      '@web-core/form-ui':
-        specifier: workspace:*
-        version: link:../../@core/ui-kit/form-ui
       '@web-core/shadcn-ui':
         specifier: workspace:*
-        version: link:../../@core/ui-kit/shadcn-ui
+        version: link:../../shadcn-ui
       '@web-core/shared':
         specifier: workspace:*
         version: link:../../@core/base/shared
       '@web/hooks':
         specifier: workspace:*
-        version: link:../hooks
+        version: link:../../@core/hooks
       '@web/icons':
         specifier: workspace:*
         version: link:../../icons
@@ -1565,7 +1110,7 @@ importers:
         version: link:../../types
       '@web/utils':
         specifier: workspace:*
-        version: link:../../utils
+        version: link:../../@core/utils
       echarts:
         specifier: 'catalog:'
         version: 6.0.0
@@ -1586,7 +1131,7 @@ importers:
         version: link:../../locales
       '@web/utils':
         specifier: workspace:*
-        version: link:../../utils
+        version: link:../../@core/utils
       axios:
         specifier: 'catalog:'
         version: 1.13.2
@@ -1603,9 +1148,15 @@ importers:
 
   packages/icons:
     dependencies:
-      '@web-core/icons':
-        specifier: workspace:*
-        version: link:../@core/base/icons
+      '@iconify/vue':
+        specifier: 'catalog:'
+        version: 5.0.0(vue@3.5.26(typescript@5.9.3))
+      lucide-vue-next:
+        specifier: 'catalog:'
+        version: 0.553.0(vue@3.5.26(typescript@5.9.3))
+      vue:
+        specifier: ^3.5.24
+        version: 3.5.26(typescript@5.9.3)
 
   packages/locales:
     dependencies:
@@ -1630,6 +1181,39 @@ importers:
       '@web-core/typings':
         specifier: workspace:*
         version: link:../@core/base/typings
+
+  packages/shadcn-ui:
+    dependencies:
+      '@vueuse/core':
+        specifier: 'catalog:'
+        version: 13.9.0(vue@3.5.26(typescript@5.9.3))
+      '@web-core/composables':
+        specifier: workspace:*
+        version: link:../@core/composables
+      '@web-core/shared':
+        specifier: workspace:*
+        version: link:../@core/base/shared
+      '@web-core/typings':
+        specifier: workspace:*
+        version: link:../@core/base/typings
+      '@web/icons':
+        specifier: workspace:*
+        version: link:../icons
+      class-variance-authority:
+        specifier: 'catalog:'
+        version: 0.7.1
+      lucide-vue-next:
+        specifier: 'catalog:'
+        version: 0.553.0(vue@3.5.26(typescript@5.9.3))
+      reka-ui:
+        specifier: 'catalog:'
+        version: 2.7.0(typescript@5.9.3)(vue@3.5.26(typescript@5.9.3))
+      vee-validate:
+        specifier: 'catalog:'
+        version: 4.15.1(vue@3.5.26(typescript@5.9.3))
+      vue:
+        specifier: ^3.5.24
+        version: 3.5.26(typescript@5.9.3)
 
   packages/stores:
     dependencies:
@@ -1658,12 +1242,6 @@ importers:
         specifier: 'catalog:'
         version: 4.6.4(vue@3.5.26(typescript@5.9.3))
 
-  packages/styles:
-    dependencies:
-      '@web-core/design':
-        specifier: workspace:*
-        version: link:../@core/base/design
-
   packages/types:
     dependencies:
       '@web-core/typings':
@@ -1675,97 +1253,6 @@ importers:
       vue-router:
         specifier: 'catalog:'
         version: 4.6.4(vue@3.5.26(typescript@5.9.3))
-
-  packages/utils:
-    dependencies:
-      '@web-core/shared':
-        specifier: workspace:*
-        version: link:../@core/base/shared
-      '@web-core/typings':
-        specifier: workspace:*
-        version: link:../@core/base/typings
-      vue-router:
-        specifier: 'catalog:'
-        version: 4.6.4(vue@3.5.26(typescript@5.9.3))
-
-  playground:
-    dependencies:
-      '@tanstack/vue-query':
-        specifier: 'catalog:'
-        version: 5.92.1(vue@3.5.26(typescript@5.9.3))
-      '@vueuse/core':
-        specifier: 'catalog:'
-        version: 13.9.0(vue@3.5.26(typescript@5.9.3))
-      '@web-core/menu-ui':
-        specifier: workspace:*
-        version: link:../packages/@core/ui-kit/menu-ui
-      '@web-core/shadcn-ui':
-        specifier: workspace:*
-        version: link:../packages/@core/ui-kit/shadcn-ui
-      '@web/access':
-        specifier: workspace:*
-        version: link:../packages/effects/access
-      '@web/common-ui':
-        specifier: workspace:*
-        version: link:../packages/effects/common-ui
-      '@web/constants':
-        specifier: workspace:*
-        version: link:../packages/constants
-      '@web/hooks':
-        specifier: workspace:*
-        version: link:../packages/effects/hooks
-      '@web/icons':
-        specifier: workspace:*
-        version: link:../packages/icons
-      '@web/layouts':
-        specifier: workspace:*
-        version: link:../packages/effects/layouts
-      '@web/locales':
-        specifier: workspace:*
-        version: link:../packages/locales
-      '@web/plugins':
-        specifier: workspace:*
-        version: link:../packages/effects/plugins
-      '@web/preferences':
-        specifier: workspace:*
-        version: link:../packages/preferences
-      '@web/request':
-        specifier: workspace:*
-        version: link:../packages/effects/request
-      '@web/stores':
-        specifier: workspace:*
-        version: link:../packages/stores
-      '@web/styles':
-        specifier: workspace:*
-        version: link:../packages/styles
-      '@web/types':
-        specifier: workspace:*
-        version: link:../packages/types
-      '@web/utils':
-        specifier: workspace:*
-        version: link:../packages/utils
-      ant-design-vue:
-        specifier: 'catalog:'
-        version: 4.2.6(vue@3.5.26(typescript@5.9.3))
-      dayjs:
-        specifier: 'catalog:'
-        version: 1.11.19
-      json-bigint:
-        specifier: 'catalog:'
-        version: 1.0.0
-      pinia:
-        specifier: ^3.0.3
-        version: 3.0.4(typescript@5.9.3)(vue@3.5.26(typescript@5.9.3))
-      vue:
-        specifier: ^3.5.24
-        version: 3.5.26(typescript@5.9.3)
-      vue-router:
-        specifier: 'catalog:'
-        version: 4.6.4(vue@3.5.26(typescript@5.9.3))
-    devDependencies:
-      '@types/json-bigint':
-        specifier: 'catalog:'
-        version: 1.0.4
 
   scripts/turbo-run:
     dependencies:
@@ -3304,10 +2791,6 @@ packages:
     resolution: {integrity: sha512-43/qtrDUokr7LJqoF2c3+RInu/t4zfrpYdoSDfYyhg52rwLV6TnOvdG4fXm7IkSB3wErkcmJS9iEhjVtOSEjjA==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  '@faker-js/faker@9.9.0':
-    resolution: {integrity: sha512-OEl393iCOoo/z8bMezRlJu+GlRGlsKbUAN7jKB6LhnKoqKve5DXRpalbItIIcwnCjs1k/FOPjFzcA6Qn+H+YbA==}
-    engines: {node: '>=18.0.0', npm: '>=9.0.0'}
-
   '@floating-ui/core@1.7.3':
     resolution: {integrity: sha512-sGnvb5dmrJaKEZ+LDIpguvdX3bDlEllmv4/ClQ9awcmCZrlx5jQyyMWFM5kBI+EyNOCDDiKk8il0zeuX3Zlg/w==}
 
@@ -3677,9 +3160,6 @@ packages:
   '@polka/url@1.0.0-next.29':
     resolution: {integrity: sha512-wwQAWhWSuHaag8c4q/KN/vCoeOJYshAIvMQwD4GpSb3OiZklFfvAgmj0VCBBImRpuF/aFgIRzllXlVX93Jevww==}
 
-  '@popperjs/core@2.11.8':
-    resolution: {integrity: sha512-P1st0aksCrn9sGZhp8GMYwBnQsbvAWsZAX44oXNNvLHGqAOcoVxmjZiohstwQ7SqKnbR47akdNi+uleWD8+g6A==}
-
   '@poppinss/colors@4.1.6':
     resolution: {integrity: sha512-H9xkIdFswbS8n1d6vmRd8+c10t2Qe+rZITbbDHHkQixH5+2x1FDGmi/0K+WgWiqQFKPSlIYB7jlH6Kpfn6Fleg==}
 
@@ -4000,27 +3480,11 @@ packages:
     peerDependencies:
       tailwindcss: '>=3.0.0 || insiders || >=4.0.0-alpha.20 || >=4.0.0-beta.1'
 
-  '@tanstack/match-sorter-utils@8.19.4':
-    resolution: {integrity: sha512-Wo1iKt2b9OT7d+YGhvEPD3DXvPv2etTusIMhMUoG7fbhmxcXCtIjJDEygy91Y2JFlwGyjqiBPRozme7UD8hoqg==}
-    engines: {node: '>=12'}
-
-  '@tanstack/query-core@5.90.12':
-    resolution: {integrity: sha512-T1/8t5DhV/SisWjDnaiU2drl6ySvsHj1bHBCWNXd+/T+Hh1cf6JodyEYMd5sgwm+b/mETT4EV3H+zCVczCU5hg==}
-
   '@tanstack/store@0.8.0':
     resolution: {integrity: sha512-Om+BO0YfMZe//X2z0uLF2j+75nQga6TpTJgLJQBiq85aOyZNIhkCgleNcud2KQg4k4v9Y9l+Uhru3qWMPGTOzQ==}
 
   '@tanstack/virtual-core@3.13.13':
     resolution: {integrity: sha512-uQFoSdKKf5S8k51W5t7b2qpfkyIbdHMzAn+AMQvHPxKUPeo1SsGaA4JRISQT87jm28b7z8OEqPcg1IOZagQHcA==}
-
-  '@tanstack/vue-query@5.92.1':
-    resolution: {integrity: sha512-m672jBiwK6sv1HHFF7Q3XsLUVKejzjEAMDqhFgLXIVtmwSayUo0WnhNQmlBlcHRKCR/Lw5jmIh6iu08ZXBh4ag==}
-    peerDependencies:
-      '@vue/composition-api': ^1.1.2
-      vue: ^3.5.24
-    peerDependenciesMeta:
-      '@vue/composition-api':
-        optional: true
 
   '@tanstack/vue-store@0.8.0':
     resolution: {integrity: sha512-YLsinYboBLIjNkxDpAn1ydaMS35dKq3M3a788JRCJi4/stWcN7Swp0pxxJ+p0IwKSY4tBXx7vMz22OYWQ1QsUQ==}
@@ -4069,17 +3533,8 @@ packages:
   '@types/html-minifier-terser@7.0.2':
     resolution: {integrity: sha512-mm2HqV22l8lFQh4r2oSsOEVea+m0qqxEmwpc9kC1p/XzmjLWrReR9D/GRs8Pex2NX/imyEH9c5IU/7tMBQCHOA==}
 
-  '@types/json-bigint@1.0.4':
-    resolution: {integrity: sha512-ydHooXLbOmxBbubnA7Eh+RpBzuaIiQjh8WGJYQB50JFGFrdxW7JzVlyEV7fAXw0T2sqJ1ysTneJbiyNLqZRAag==}
-
   '@types/json-schema@7.0.15':
     resolution: {integrity: sha512-5+fP8P8MFNC+AyZCDxrB2pkZFPGzqQWUzpSeuuVLvm8VMcorNYavBqoFcxK8bQz4Qsbn4oUEEem4wDLfcysGHA==}
-
-  '@types/jsonwebtoken@9.0.10':
-    resolution: {integrity: sha512-asx5hIG9Qmf/1oStypjanR7iKTv0gXQ1Ov/jfrX6kS/EO0OFni8orbmGCn0672NHR3kXHwpAwR+B368ZGN/2rA==}
-
-  '@types/lodash-es@4.17.12':
-    resolution: {integrity: sha512-0NgftHUcV4v34VhXm8QBSftKVXtbkBG3ViCjs6+eJ5a6y6Mi/jiFGPc1sC7QK+9BFhWrURE3EOggmWaSxL9OzQ==}
 
   '@types/lodash.clonedeep@4.5.9':
     resolution: {integrity: sha512-19429mWC+FyaAhOLzsS8kZUsI+/GmBAQ0HFiCPsKGU+7pBXOQWhyrY6xNNDwUSX8SMZMJvuFVMF9O5dQOlQK9Q==}
@@ -4099,9 +3554,6 @@ packages:
   '@types/minimatch@3.0.5':
     resolution: {integrity: sha512-Klz949h02Gz2uZCMGwDUSDS1YBlTdDDgbWHi+81l29tQALUtvz4rAYi5uoVhE5Lagoq6DeqAUlbrHvW/mXDgdQ==}
 
-  '@types/ms@2.1.0':
-    resolution: {integrity: sha512-GsCCIZDE/p3i96vtEqx+7dBUGXrc7zeSK3wwPHIaRThS+9OhWIXRqzs4d6k1SVU8g91DrNRWxWUGhp5KXQb2VA==}
-
   '@types/node@12.20.55':
     resolution: {integrity: sha512-J8xLz7q2OFulZ2cyGTLE1TbbZcjpno7FaN6zdJNrgAdrJ+DZzh/uFR6YrTb4C+nXakvud8Q4+rbhoIWlYQbUFQ==}
 
@@ -4120,9 +3572,6 @@ packages:
   '@types/postcss-import@14.0.3':
     resolution: {integrity: sha512-raZhRVTf6Vw5+QbmQ7LOHSDML71A5rj4+EqDzAbrZPfxfoGzFxMHRCq16VlddGIZpHELw0BG4G0YE2ANkdZiIQ==}
 
-  '@types/qrcode@1.5.6':
-    resolution: {integrity: sha512-te7NQcV2BOvdj2b1hCAHzAoMNuj65kNBMz0KBaxM6c3VGBOhU0dURQKOtH8CFNI/dsKkwlv32p26qYQTWoB5bw==}
-
   '@types/qs@6.14.0':
     resolution: {integrity: sha512-eOunJqu0K1923aExK6y8p6fsihYEn/BYuQ4g0CxAAgFc4b/ZLN4CrsRZ55srTdqoiLzU2B2evC+apEIxprEzkQ==}
 
@@ -4135,14 +3584,8 @@ packages:
   '@types/sortablejs@1.15.9':
     resolution: {integrity: sha512-7HP+rZGE2p886PKV9c9OJzLBI6BBJu1O7lJGYnPyG3fS4/duUCcngkNCjsLwIMV+WMqANe3tt4irrXHSIe68OQ==}
 
-  '@types/tinycolor2@1.4.6':
-    resolution: {integrity: sha512-iEN8J0BoMnsWBqjVbWH/c0G0Hh7O21lpR2/+PrvAVgWdzL7eexIFm4JN/Wn10PTcmNdtS6U67r499mlWMXOxNw==}
-
   '@types/trusted-types@2.0.7':
     resolution: {integrity: sha512-ScaPdn1dQczgbl0QFTeTOmVHFULt394XJgOQNoyVhZ6r2vLnMLJfBPd53SB52T/3G36VI1/g2MZaX0cwDuXsfw==}
-
-  '@types/validator@13.15.10':
-    resolution: {integrity: sha512-T8L6i7wCuyoK8A/ZeLYt1+q0ty3Zb9+qbSSvrIVitzT3YjZqkTZ40IbRsPanlB4h1QB3JVL1SYCdR6ngtFYcuA==}
 
   '@types/web-bluetooth@0.0.21':
     resolution: {integrity: sha512-oIQLCGWtcFZy2JW77j9k8nHzAOpqMHLQejDA48XXMWH6tjCQHz5RCFz1bzsmROyL6PUm+LLnUiI4BCn221inxA==}
@@ -4336,11 +3779,6 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@vee-validate/zod@4.15.1':
-    resolution: {integrity: sha512-329Z4TDBE5Vx0FdbA8S4eR9iGCFFUNGbxjpQ20ff5b5wGueScjocUIx9JHPa79LTG06RnlUR4XogQsjN4tecKA==}
-    peerDependencies:
-      zod: ^3.24.0
-
   '@vercel/nft@0.30.4':
     resolution: {integrity: sha512-wE6eAGSXScra60N2l6jWvNtVK0m+sh873CpfZW4KI2v8EHuUQp+mSEi4T+IcdPCSEDgCdAS/7bizbhQlkjzrSA==}
     engines: {node: '>=18'}
@@ -4507,61 +3945,11 @@ packages:
     peerDependencies:
       vue: ^3.5.24
 
-  '@vueuse/core@14.1.0':
-    resolution: {integrity: sha512-rgBinKs07hAYyPF834mDTigH7BtPqvZ3Pryuzt1SD/lg5wEcWqvwzXXYGEDb2/cP0Sj5zSvHl3WkmMELr5kfWw==}
-    peerDependencies:
-      vue: ^3.5.24
-
-  '@vueuse/integrations@14.1.0':
-    resolution: {integrity: sha512-eNQPdisnO9SvdydTIXnTE7c29yOsJBD/xkwEyQLdhDC/LKbqrFpXHb3uS//7NcIrQO3fWVuvMGp8dbK6mNEMCA==}
-    peerDependencies:
-      async-validator: ^4
-      axios: ^1
-      change-case: ^5
-      drauu: ^0.4
-      focus-trap: ^7
-      fuse.js: ^7
-      idb-keyval: ^6
-      jwt-decode: ^4
-      nprogress: ^0.2
-      qrcode: ^1.5
-      sortablejs: ^1
-      universal-cookie: ^7 || ^8
-      vue: ^3.5.24
-    peerDependenciesMeta:
-      async-validator:
-        optional: true
-      axios:
-        optional: true
-      change-case:
-        optional: true
-      drauu:
-        optional: true
-      focus-trap:
-        optional: true
-      fuse.js:
-        optional: true
-      idb-keyval:
-        optional: true
-      jwt-decode:
-        optional: true
-      nprogress:
-        optional: true
-      qrcode:
-        optional: true
-      sortablejs:
-        optional: true
-      universal-cookie:
-        optional: true
-
   '@vueuse/metadata@12.8.2':
     resolution: {integrity: sha512-rAyLGEuoBJ/Il5AmFHiziCPdQzRt88VxR+Y/A/QhJ1EWtWqPBBAxTAFaSkviwEuOEZNtW8pvkPgoCZQ+HxqW1A==}
 
   '@vueuse/metadata@13.9.0':
     resolution: {integrity: sha512-1AFRvuiGphfF7yWixZa0KwjYH8ulyjDCC0aFgrGRz8+P4kvDFSdXLVfTk5xAN9wEuD1J6z4/myMoYbnHoX07zg==}
-
-  '@vueuse/metadata@14.1.0':
-    resolution: {integrity: sha512-7hK4g015rWn2PhKcZ99NyT+ZD9sbwm7SGvp7k+k+rKGWnLjS/oQozoIZzWfCewSUeBmnJkIb+CNr7Zc/EyRnnA==}
 
   '@vueuse/motion@3.0.3':
     resolution: {integrity: sha512-4B+ITsxCI9cojikvrpaJcLXyq0spj3sdlzXjzesWdMRd99hhtFI6OJ/1JsqwtF73YooLe0hUn/xDR6qCtmn5GQ==}
@@ -4573,11 +3961,6 @@ packages:
 
   '@vueuse/shared@13.9.0':
     resolution: {integrity: sha512-e89uuTLMh0U5cZ9iDpEI2senqPGfbPRTHM/0AaQkcxnpqjkZqDYP8rpfm7edOz8s+pOCOROEy1PIveSW8+fL5g==}
-    peerDependencies:
-      vue: ^3.5.24
-
-  '@vueuse/shared@14.1.0':
-    resolution: {integrity: sha512-EcKxtYvn6gx1F8z9J5/rsg3+lTQnvOruQd8fUecW99DCK04BkWD7z5KQ/wTAx+DazyoEE9dJt/zV8OIEQbM6kw==}
     peerDependencies:
       vue: ^3.5.24
 
@@ -4851,9 +4234,6 @@ packages:
     resolution: {integrity: sha512-pbnl5XzGBdrFU/wT4jqmJVPn2B6UHPBOhzMQkY/SPUPB6QtUXtmBHBIwCbXJol93mOpGMnQyP/+BB19q04xj7g==}
     engines: {node: '>=4'}
 
-  bignumber.js@9.3.1:
-    resolution: {integrity: sha512-Ko0uX15oIUS7wJ3Rb30Fs6SkVbLmPBAKdlm7q9+ak9bbIeFf0MwuBsQV6z7+X768/cHsfg+WlysDWJcmthjsjQ==}
-
   binary-extensions@2.3.0:
     resolution: {integrity: sha512-Ceh+7ox5qe7LJuLHoY0feh3pHuUDHAcRUeyL2VYghZwfpkNIy/+8Ocg0a3UuSoYzavmylwuLWQOf3hl0jjMMIw==}
     engines: {node: '>=8'}
@@ -4892,9 +4272,6 @@ packages:
   buffer-crc32@1.0.0:
     resolution: {integrity: sha512-Db1SbgBS/fg/392AblrMJk97KggmvYhr4pB5ZIMTWtaivCPMWLkmb7m21cJvpvgK+J3nsU2CmmixNBZx4vFj/w==}
     engines: {node: '>=8.0.0'}
-
-  buffer-equal-constant-time@1.0.1:
-    resolution: {integrity: sha512-zRpUiDwd/xk6ADqPMATG8vc9VPrkck7T07OIx0gnjmJAnHnTVXNQG3vfvWNuiZIkwu9KrKdA1iJKfsfTVxE6NA==}
 
   buffer-from@1.1.2:
     resolution: {integrity: sha512-E+XQCRwSbaaiChtv6k6Dwgc+bx+Bs6vuKJHHl5kox/BaKbhiXzqQOwK4cO22yElGp2OCmjwVhT3HmxgyPGnJfQ==}
@@ -4954,10 +4331,6 @@ packages:
   camelcase-css@2.0.1:
     resolution: {integrity: sha512-QOSvevhslijgYwRx6Rv7zKdMF8lbRmx+uQGx2+vDc+KI/eBnsy9kit5aj23AgGu3pa4t9AgwbnXWqS+iOY+2aA==}
     engines: {node: '>= 6'}
-
-  camelcase@5.3.1:
-    resolution: {integrity: sha512-L28STB170nwWS63UjtlEOE3dldQApaJXZkOI1uMFfzf3rRuPegHaHesyee+YxQ+W6SvRDQV6UrdOdRiR153wJg==}
-    engines: {node: '>=6'}
 
   camelcase@6.3.0:
     resolution: {integrity: sha512-Gmy6FhYlCY7uOElZUSbxo2UCDH8owEk996gkbrpsgGtrJLM3J7jGxl9Ic7Qwwj4ivOE5AWZWRMecDdF7hqGjFA==}
@@ -5068,15 +4441,9 @@ packages:
     resolution: {integrity: sha512-nPdaFdQ0h/GEigbPClz11D0v/ZJEwxmeVZGeMo3Z5StPtUTkA9o1lD6QwoirYiSDzbcwn2XcjwmCp68W1IS4TA==}
     engines: {node: '>=18'}
 
-  clipboard@2.0.11:
-    resolution: {integrity: sha512-C+0bbOqkezLIsmWSvlsXS0Q0bmkugu7jcfMIACB+RDEntIzQIkdr148we28AfSloQLRdZlYL/QYyrq05j/3Faw==}
-
   clipboardy@4.0.0:
     resolution: {integrity: sha512-5mOlNS0mhX0707P2I0aZ2V/cmHUEO/fL7VFLqszkhUsxt7RwnmrInf/eEQKlf5GzvYeHIjT+Ov1HRfNmymlG0w==}
     engines: {node: '>=18'}
-
-  cliui@6.0.0:
-    resolution: {integrity: sha512-t6wbgtoCXvAzst7QgXxJYqPt0usEfbgQdftEPbLL/cvv6HPE5VgvqCuAIDR0NgU52ds6rFwqrgakNLrHEjCbrQ==}
 
   cliui@7.0.4:
     resolution: {integrity: sha512-OcRE68cOsVMXp1Yvonl/fzkQOyjLSu/8bhPDfQt0e0/Eb283TKP20Fs2MqoPsr9SwA595rRCA+QMzYc9nBP+JQ==}
@@ -5480,10 +4847,6 @@ packages:
       supports-color:
         optional: true
 
-  decamelize@1.2.0:
-    resolution: {integrity: sha512-z2S+W9X73hAUUki+N+9Za2lBlun89zigOyGrsax+KUQ6wKW4ZoWpEYBkGhQjwAjjDCkWxhY0VKEhk8wzY7F5cA==}
-    engines: {node: '>=0.10.0'}
-
   deep-eql@5.0.2:
     resolution: {integrity: sha512-h5k/5U50IJJFpzfL6nO9jaaumfjO/f2NjK/oYB2Djzm4p9L+3T9qWpZqZ2hAbLPuuYq9wrU08WQyBTL5GbPk5Q==}
     engines: {node: '>=6'}
@@ -5529,9 +4892,6 @@ packages:
   delayed-stream@1.0.0:
     resolution: {integrity: sha512-ZySD7Nf91aLB0RxL4KGrKHBXl7Eds1DAmEdcoVawXnLD7SDhpNgtuII2aAkg7a7QS41jxPSZ17p4VdGnMHk3MQ==}
     engines: {node: '>=0.4.0'}
-
-  delegate@3.2.0:
-    resolution: {integrity: sha512-IofjkYBZaZivn0V8nnsMJGBr4jVLxHDheKSW88PyxS5QC4Vo9ZbZVvhzlSxY87fVq3STR6r+4cGepyHkcWOQSw==}
 
   denque@2.1.0:
     resolution: {integrity: sha512-HVQE3AAb/pxF8fQAoiqpvg9i3evqug3hoiwakOyZAwJm+6vZehbkYXZ0l4JxS+I3QxM97v5aaRNhj8v5oBhekw==}
@@ -5579,9 +4939,6 @@ packages:
   diff@8.0.2:
     resolution: {integrity: sha512-sSuxWU5j5SR9QQji/o2qMvqRNYRDOcBTgsJ/DeCf4iSN4gW+gNMXM7wFIP+fdXZxoNiAnHUTGjCr+TSWXdRDKg==}
     engines: {node: '>=0.3.1'}
-
-  dijkstrajs@1.0.3:
-    resolution: {integrity: sha512-qiSlmBq9+BCdCA/L46dw8Uy93mloxsPSbwnm5yrKn2vMPiy8KyAskTF6zuV/j5BMsmOGZDPs7KjU+mjb670kfA==}
 
   dir-glob@3.0.1:
     resolution: {integrity: sha512-WkrWp9GR4KXfKGYzOLmTuGVi1UWFfws377n9cc55/tb6DuqyF6pcQ5AbiHEshaDpY9v6oaSr2XCDidGmMwdzIA==}
@@ -5666,9 +5023,6 @@ packages:
 
   eastasianwidth@0.2.0:
     resolution: {integrity: sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==}
-
-  ecdsa-sig-formatter@1.0.11:
-    resolution: {integrity: sha512-nagl3RYrbNv6kQkeJIpt6NJZy8twLB/2vtz6yN9Z4vRKHN4/QZJIEbqohALSgwKdnksuY3k5Addp5lg8sVoVcQ==}
 
   echarts@6.0.0:
     resolution: {integrity: sha512-Tte/grDQRiETQP4xz3iZWSvoHrkCQtwqd6hs+mifXcjrCuo2iKWbajFObuLJVBlDIJlOzgQPd1hsaKt/3+OMkQ==}
@@ -6192,9 +5546,6 @@ packages:
   flatted@3.3.3:
     resolution: {integrity: sha512-GX+ysw4PBCz0PzosHDepZGANEuFCMLrnRTiEy9McGjmkCQYwRq4A/X786G/fjM/+OjsWSU1ZrY5qyARZmO/uwg==}
 
-  focus-trap@7.7.0:
-    resolution: {integrity: sha512-DJJDHpEgoSbP8ZE1MNeU2IzCpfFyFdNZZRilqmfH2XiQsPK6PtD8AfJqWzEBudUQB2yHwZc5iq54rjTaGQ+ljw==}
-
   follow-redirects@1.15.11:
     resolution: {integrity: sha512-deG2P0JfjrTxl50XGCDyfI97ZGVCxIpfKYmfyrQ54n5FO/0gfIES8C/Psl6kWVDolizcaaxZJnTS0QSMxvnsBQ==}
     engines: {node: '>=4.0'}
@@ -6410,9 +5761,6 @@ packages:
 
   globrex@0.1.2:
     resolution: {integrity: sha512-uHJgbwAMwNFf5mLst7IWLNg14x1CkeqglJb/K3doi4dw6q2IvAAmM/Y81kevy83wP+Sst+nutFTYOGg3d1lsxg==}
-
-  good-listener@1.2.2:
-    resolution: {integrity: sha512-goW1b+d9q/HIwbVYZzZ6SsTr4IgE+WA44A0GmPIQstuOrgsFcT7VEJ48nmr9GaRtNu0XTKacFLGnBPAM6Afouw==}
 
   gopd@1.2.0:
     resolution: {integrity: sha512-ZUKRh6/kUFoAiTAtTYPZJ3hw9wNxx+BIBOijnlG9PnrJsCcSjs1wyyD6vJpaYtgnzDrKYRSqf3OO6Rfa93xsRg==}
@@ -6926,9 +6274,6 @@ packages:
     engines: {node: '>=6'}
     hasBin: true
 
-  json-bigint@1.0.0:
-    resolution: {integrity: sha512-SiPv/8VpZuWbvLSMtTDU8hEfrZWg/mH/nV/b4o0CYbSxu1UIQPLdwKOCIyLQX+VIPO5vrLX3i8qtqFyhdPSUSQ==}
-
   json-buffer@3.0.1:
     resolution: {integrity: sha512-4bV5BfR2mqfQTJm+V5tPPdf+ZpuhiIvTuAB5g8kcrXOZpTT/QwwVRWBywX1ozr6lEuPdbHxwaJlm9G6mI2sfSQ==}
 
@@ -6969,16 +6314,6 @@ packages:
   jsonpointer@5.0.1:
     resolution: {integrity: sha512-p/nXbhSEcu3pZRdkW1OfJhpsVtW1gd4Wa1fnQc9YLiTfAjn0312eMKimbdIQzuZl9aa9xUGaRlP9T/CJE/ditQ==}
     engines: {node: '>=0.10.0'}
-
-  jsonwebtoken@9.0.3:
-    resolution: {integrity: sha512-MT/xP0CrubFRNLNKvxJ2BYfy53Zkm++5bX9dtuPbqAeQpTVe0MQTFhao8+Cp//EmJp244xt6Drw/GVEGCUj40g==}
-    engines: {node: '>=12', npm: '>=6'}
-
-  jwa@2.0.1:
-    resolution: {integrity: sha512-hRF04fqJIP8Abbkq5NKGN0Bbr3JxlQ+qhZufXVr0DvujKy93ZCbXZMHDL4EOtodSbCWxOqR8MS1tXA5hwqCXDg==}
-
-  jws@4.0.1:
-    resolution: {integrity: sha512-EKI/M/yqPncGUUh44xz0PxSidXFr/+r0pA70+gIYhjv+et7yxM+s29Y+VGDkovRofQem0fs7Uvf4+YmAdyRduA==}
 
   keyv@4.5.4:
     resolution: {integrity: sha512-oxVHkHR/EJf2CNXnWxRLW6mg7JyCCUcG0DtEGmL2ctUo1PNTin1PUil+r/+4r5MpVgC/fn1kjsx7mjSujKqIpw==}
@@ -7135,26 +6470,11 @@ packages:
   lodash.defaults@4.2.0:
     resolution: {integrity: sha512-qjxPLHd3r5DnsdGacqOMU6pb/avJzdh9tFX2ymgoZE27BmjXrNy/y4LoaiTeAb+O3gL8AfpJGtqfX/ae2leYYQ==}
 
-  lodash.includes@4.3.0:
-    resolution: {integrity: sha512-W3Bx6mdkRTGtlJISOvVD/lbqjTlPPUDTMnlXZFnVwi9NKJ6tiAk6LVdlhZMm17VZisqhKcgzpO5Wz91PCt5b0w==}
-
   lodash.isarguments@3.1.0:
     resolution: {integrity: sha512-chi4NHZlZqZD18a0imDHnZPrDeBbTtVN7GXMwuGdRH9qotxAjYs3aVLKc7zNOG9eddR5Ksd8rvFEBc9SsggPpg==}
 
-  lodash.isboolean@3.0.3:
-    resolution: {integrity: sha512-Bz5mupy2SVbPHURB98VAcw+aHh4vRV5IPNhILUCsOzRmsTmSQ17jIuqopAentWoehktxGd9e/hbIXq980/1QJg==}
-
-  lodash.isinteger@4.0.4:
-    resolution: {integrity: sha512-DBwtEWN2caHQ9/imiNeEA5ys1JoRtRfY3d7V9wkqtbycnAmTvRRmbHKDV4a0EYc678/dia0jrte4tjYwVBaZUA==}
-
-  lodash.isnumber@3.0.3:
-    resolution: {integrity: sha512-QYqzpfwO3/CWf3XP+Z+tkQsfaLL/EnUlXWVkIk5FUPc4sBdTehEqZONuyRt2P67PXAk+NXmTBcc97zw9t1FQrw==}
-
   lodash.isplainobject@4.0.6:
     resolution: {integrity: sha512-oSXzaWypCMHkPC3NvBEaPHf0KsA5mvPrOPgQWDsbg8n7orZ290M0BmC/jgRZ4vcJ6DTAhjrsSYgdsW/F+MFOBA==}
-
-  lodash.isstring@4.0.1:
-    resolution: {integrity: sha512-0wJxfxH1wgO3GrbuP+dTTk7op+6L41QCXbGINEmD+ny/G/eCqGzxyCsh7159S+mgDDcoarnBw6PC1PS5+wUGgw==}
 
   lodash.kebabcase@4.1.1:
     resolution: {integrity: sha512-N8XRTIMMqqDgSy4VLKPnJ/+hpGZN+PHQiJnSenYqPaVV/NCqEogTnAdZLQiGKhxX+JCs8waWq2t1XHWKOmlY8g==}
@@ -7167,9 +6487,6 @@ packages:
 
   lodash.mergewith@4.6.2:
     resolution: {integrity: sha512-GK3g5RPZWTRSeLSpgP8Xhra+pnjBC56q9FZYe1d5RN3TJ35dbkGy3YqBSMbyCrlbi+CM9Z3Jk5yTL7RCsqboyQ==}
-
-  lodash.once@4.1.1:
-    resolution: {integrity: sha512-Sb487aTOCr9drQVL8pIxOzVhafOjZN9UU54hiN8PU3uAiSV7lx1yYNpbNmex2PK6dSJoNTSJUUswT651yww3Mg==}
 
   lodash.snakecase@4.1.1:
     resolution: {integrity: sha512-QZ1d4xoBHYUeuouhEq3lk3Uq7ldgyFXGBhg04+oRLnIz8o9T65Eh+8YdroUwn846zchkA9yDsDl5CVVaV2nqYw==}
@@ -7841,10 +7158,6 @@ packages:
     resolution: {integrity: sha512-Nc3IT5yHzflTfbjgqWcCPpo7DaKy4FnpB0l/zCAW0Tc7jxAiuqSxHasntB3D7887LSrA93kDJ9IXovxJYxyLCA==}
     engines: {node: '>=4'}
 
-  pngjs@5.0.0:
-    resolution: {integrity: sha512-40QW5YalBNfQo5yRYmiw7Yz6TKKVr3h6970B2YE+3fQpsWcrbj1PzJgxeJ19DRQjhMbKPIuMY8rFaXc8moolVw==}
-    engines: {node: '>=10.13.0'}
-
   popmotion@11.0.5:
     resolution: {integrity: sha512-la8gPM1WYeFznb/JqF4GiTkRRPZsfaj2+kCxqQgr2MJylMmIKUwBfWW8Wa5fml/8gmtlD5yI01MP1QCZPWmppA==}
 
@@ -8405,11 +7718,6 @@ packages:
     resolution: {integrity: sha512-kXuQdQTB6oN3KhI6V4acnBSZx8D2I4xzZvn9+wFLLFCoBNQY/sFnCW6c43OL7pOQ2HvGV4lnWIXNmgfp7cTWhQ==}
     engines: {node: '>=20'}
 
-  qrcode@1.5.4:
-    resolution: {integrity: sha512-1ca71Zgiu6ORjHqFBDpnSMTR2ReToX4l1Au1VFLyVeBTFavzQnv5JxMFr3ukHVKpSrSA2MCk0lNJSykjUfz7Zg==}
-    engines: {node: '>=10.13.0'}
-    hasBin: true
-
   qs@6.14.0:
     resolution: {integrity: sha512-YWWTjgABSKcvs/nWBi9PycY/JiPJqOD4JA6o9Sej2AtvSGarXxKC3OQSk4pAarbdQlKAh5D4FCQkJNkW+GAn3w==}
     engines: {node: '>=0.6'}
@@ -8533,9 +7841,6 @@ packages:
     resolution: {integrity: sha512-G08Dxvm4iDN3MLM0EsP62EDV9IuhXPR6blNz6Utcp7zyV3tr4HVNINt6MpaRWbxoOHT3Q7YN2P+jaHX8vUbgog==}
     engines: {node: '>= 0.10'}
 
-  remove-accents@0.5.0:
-    resolution: {integrity: sha512-8g3/Otx1eJaVD12e31UbJj1YzdtVvzH85HV7t+9MJYk/u3XmkOUJ5Ys9wQrf9PCPK8+xn4ymzqYCiZl6QWKn+A==}
-
   require-directory@2.1.1:
     resolution: {integrity: sha512-fGxEI7+wsG9xrvdjsrlmL22OMTTiHRwAMroiEeMgq8gzoLC/PQr7RsRDSTLUg/bZAZtF+TVIkHc6/4RIKrui+Q==}
     engines: {node: '>=0.10.0'}
@@ -8543,9 +7848,6 @@ packages:
   require-from-string@2.0.2:
     resolution: {integrity: sha512-Xf0nWe6RseziFMu+Ap9biiUbmplq6S9/p+7w7YXP/JBHhrUDDUhwa+vANyubuqfZWTveU//DYVGsDG7RKL/vEw==}
     engines: {node: '>=0.10.0'}
-
-  require-main-filename@2.0.0:
-    resolution: {integrity: sha512-NKN5kMDylKuldxYLSUfrbo5Tuzh4hd+2E8NPPX02mZtn1VuREQToYe/ZdlJy+J3uCpfaiGF05e7B8W0iXbQHmg==}
 
   require-package-name@2.0.1:
     resolution: {integrity: sha512-uuoJ1hU/k6M0779t3VMVIYpb2VMJk05cehCaABFhXaibcbvfgR8wKiozLjVFSzJPmQMRqIcO0HMyTFqfV09V6Q==}
@@ -8698,9 +8000,6 @@ packages:
     resolution: {integrity: sha512-Wgtnw0QSm0v7gVKv11nOoeyGS65EThGXnBB7jfd4IhZd2eq3B4AMPcXAL5qJ1h55+Qolun7TONTwX7H5m6e2pQ==}
     engines: {node: '>=8.0'}
 
-  select@1.1.2:
-    resolution: {integrity: sha512-OwpTSOfy6xSs1+pwcNrv0RBMOzI39Lp3qQKUTPVVPRjCdNa5JH/oPRiqsesIskK8TVgmRiHwO4KXlV2Li9dANA==}
-
   semver-compare@1.0.0:
     resolution: {integrity: sha512-YM3/ITh2MJ5MtzaM429anh+x2jiLVjqILF4m4oyQB18W7Ggea7BfqdH/wGMK7dDiMghv/6WG7znWMwUDzJiXow==}
 
@@ -8735,9 +8034,6 @@ packages:
   serve-static@2.2.1:
     resolution: {integrity: sha512-xRXBn0pPqQTVQiC8wyQrKs2MOlX24zQ0POGaj0kultvoOCstBQM5yvOhAVSUwOMjQtTvsPWoNCHfPGwaaQJhTw==}
     engines: {node: '>= 18'}
-
-  set-blocking@2.0.0:
-    resolution: {integrity: sha512-KiKBS8AnWGEyLzofFfmvKwpdPzqiy16LvQfK3yv/fVH7Bj13/wl3JSR1J+rfgRE9q7xUJK4qvgS8raSOeLUehw==}
 
   set-function-length@1.2.2:
     resolution: {integrity: sha512-pgRc4hJ4/sNjWCSS9AmnS40x3bNMDTknHgL5UaMBTMyJnU90EgWh1Rz+MC9eFu4BuN/UwZjKQuY/1v3rM7HMfg==}
@@ -9140,9 +8436,6 @@ packages:
     resolution: {integrity: sha512-ulAk51I9UVUyJgxlv9M6lFot2WP3e7t8Kz9+IS6D4rVba1tR9kON+Ey69f+1R4Q8cd45Lod6a4IcJIxnzGc/zA==}
     engines: {node: '>=18'}
 
-  tabbable@6.3.0:
-    resolution: {integrity: sha512-EIHvdY5bPLuWForiR/AN2Bxngzpuwn1is4asboytXtpTgsArc+WmSJKVLlhdh71u7jFcryDqB2A8lQvj78MkyQ==}
-
   table@6.9.0:
     resolution: {integrity: sha512-9kY+CygyYM6j02t5YFHbNz2FN5QmYGv9zAjVp4lCDjlCw7amdckXlEt/bjMhUIfj4ThGRE4gCUH5+yGnNuPo5A==}
     engines: {node: '>=10.0.0'}
@@ -9174,17 +8467,6 @@ packages:
   tar@7.5.2:
     resolution: {integrity: sha512-7NyxrTE4Anh8km8iEy7o0QYPs+0JKBTj5ZaqHg6B39erLg0qYXN3BijtShwbsNSvQ+LN75+KV+C4QR/f6Gwnpg==}
     engines: {node: '>=18'}
-
-  tdesign-icons-vue-next@0.4.1:
-    resolution: {integrity: sha512-uDPuTLRORnGcTyVGNoentNaK4V+ZcBmhYwcY3KqDaQQ5rrPeLMxu0ZVmgOEf0JtF2QZiqAxY7vodNEiLUdoRKA==}
-    peerDependencies:
-      vue: ^3.5.24
-
-  tdesign-vue-next@1.17.7:
-    resolution: {integrity: sha512-mV/9mm/nIS+tfx1oUG1IMMmTPFeZfLmP8bIVEa7S9CpVke2+Yei5i8RBXmDwF/d+OaDoKVgwUq08goSIZfRePQ==}
-    engines: {node: '>= 18'}
-    peerDependencies:
-      vue: ^3.5.24
 
   temp-dir@2.0.0:
     resolution: {integrity: sha512-aoBAniQmmwtcKp/7BzsH8Cxzv8OL736p7v1ihGb5e9DJ9kTwGWHrQrVB5+lfVDzfGrdRzXch+ig7LHaY1JTOrg==}
@@ -9227,14 +8509,8 @@ packages:
   through@2.3.8:
     resolution: {integrity: sha512-w89qg7PI8wAdvX60bMDP+bFoD5Dvhm9oLheFp5O4a2QF0cSBGsBX4qZmadPMvVqlLJBBci+WqGGOAPvcDeNSVg==}
 
-  tiny-emitter@2.1.0:
-    resolution: {integrity: sha512-NB6Dk1A9xgQPMoGqC5CVXn123gWyte215ONT5Pp5a0yt4nlEoO1ZWeCwpncaekPHXO60i47ihFnZPiRPjRMq4Q==}
-
   tinybench@2.9.0:
     resolution: {integrity: sha512-0+DUvqWMValLmha6lr4kD8iAMK1HzV0/aKnCtWb9v9641TnP/MFb7Pc2bxoxQjTXAErryXVgUOfv2YqNllqGeg==}
-
-  tinycolor2@1.6.0:
-    resolution: {integrity: sha512-XPaBkWQJdsf3pLKJV9p4qN/S+fm2Oj8AIPo1BTUhg5oxkvm9+SVEGFdhyOz7tTdUTfvxMiAs4sp6/eZO2Ew+pw==}
 
   tinyexec@0.3.2:
     resolution: {integrity: sha512-KQQR9yN7R5+OSwaK0XQoj22pwHoTlgYqmUscPYoknOoWCWfj/5/ABTMRi69FrKU5ffPVh5QcFikpWJI/P1ocHA==}
@@ -9258,9 +8534,6 @@ packages:
   tinyspy@4.0.4:
     resolution: {integrity: sha512-azl+t0z7pw/z958Gy9svOTuzqIk6xq+NSheJzn5MMWtWTFywIacg2wUlzKFGtt3cthx0r2SxMK0yzJOR0IES7Q==}
     engines: {node: '>=14.0.0'}
-
-  tippy.js@6.3.7:
-    resolution: {integrity: sha512-E1d3oP2emgJ9dRQZdf3Kkn0qJgI6ZLpyS5z6ZkY1DF3kaQaBsGZsndEpHwx+eC+tYM41HaSNvNtLx8tU57FzTQ==}
 
   to-regex-range@5.0.1:
     resolution: {integrity: sha512-65P7iz6X5yEr1cwcgvQxbbIw7Uk3gOy5dIdtZ4rDveLqhrdJP+Li/Hx6tyK0NEb+2GCyneCMJiGqrADCSNk8sQ==}
@@ -9583,10 +8856,6 @@ packages:
   util-deprecate@1.0.2:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
 
-  validator@13.15.26:
-    resolution: {integrity: sha512-spH26xU080ydGggxRyR1Yhcbgx+j3y5jbNXk/8L+iRvdIEQ4uTRH2Sgf2dokud6Q4oAtsbNvJ1Ft+9xmm6IZcA==}
-    engines: {node: '>= 0.10'}
-
   vee-validate@4.15.1:
     resolution: {integrity: sha512-DkFsiTwEKau8VIxyZBGdO6tOudD+QoUBPuHj3e6QFqmbfCRj1ArmYWue9lEp6jLSWBIw4XPlDLjFIZNLdRAMSg==}
     peerDependencies:
@@ -9762,18 +9031,8 @@ packages:
     peerDependencies:
       vue: ^3.5.24
 
-  vue-json-viewer@3.0.4:
-    resolution: {integrity: sha512-pnC080rTub6YjccthVSNQod2z9Sl5IUUq46srXtn6rxwhW8QM4rlYn+CTSLFKXWfw+N3xv77Cioxw7B4XUKIbQ==}
-    peerDependencies:
-      vue: ^3.5.24
-
   vue-router@4.6.4:
     resolution: {integrity: sha512-Hz9q5sa33Yhduglwz6g9skT8OBPii+4bFn88w6J+J4MfEo4KRRpmiNG/hHHkdbRFlLBOqxN8y8gf2Fb0MTUgVg==}
-    peerDependencies:
-      vue: ^3.5.24
-
-  vue-tippy@6.7.1:
-    resolution: {integrity: sha512-gdHbBV5/Vc8gH87hQHLA7TN1K4BlLco3MAPrTb70ZYGXxx+55rAU4a4mt0fIoP+gB3etu1khUZ6c29Br1n0CiA==}
     peerDependencies:
       vue: ^3.5.24
 
@@ -9859,9 +9118,6 @@ packages:
     resolution: {integrity: sha512-K4jVyjnBdgvc86Y6BkaLZEN933SwYOuBFkdmBu9ZfkcAbdVbpITnDmjvZ/aQjRXQrv5EPkTnD1s39GiiqbngCw==}
     engines: {node: '>= 0.4'}
 
-  which-module@2.0.1:
-    resolution: {integrity: sha512-iBdZ57RDvnOR9AGBhML2vFZf7h8vmBjhoaZqODJBFWHVtKkDmKuHai3cx5PgVMrX5YDNp27AofYbAwctSS+vhQ==}
-
   which-typed-array@1.1.19:
     resolution: {integrity: sha512-rEvr90Bck4WZt9HHFC4DJMsjvu7x+r6bImz0/BrbWb7A2djJ8hnZMrWnHo9F8ssv0OMErasDhftrfROTyqSDrw==}
     engines: {node: '>= 0.4'}
@@ -9937,10 +9193,6 @@ packages:
   workbox-window@7.4.0:
     resolution: {integrity: sha512-/bIYdBLAVsNR3v7gYGaV4pQW3M3kEPx5E8vDxGvxo6khTrGtSSCS7QiFKv9ogzBgZiy0OXLP9zO28U/1nF1mfw==}
 
-  wrap-ansi@6.2.0:
-    resolution: {integrity: sha512-r6lPcBGxZXlIcymEu7InxDMhdW0KDxpLgoFLcguasxCaJ/SOIZwINatK9KY/tf+ZrlywOKU0UDj3ATXUBfxJXA==}
-    engines: {node: '>=8'}
-
   wrap-ansi@7.0.0:
     resolution: {integrity: sha512-YVGIj2kamLSTxw6NsZjoBxfSwsn0ycdesmc4p+Q21c5zPuZ1pl+NfxVdxPtdHvmNVOQ6XSYG4AUtyt/Fi7D16Q==}
     engines: {node: '>=10'}
@@ -9972,9 +9224,6 @@ packages:
     resolution: {integrity: sha512-ICP2e+jsHvAj2E2lIHxa5tjXRlKDJo4IdvPvCXbXQGdzSfmSpNVyIKMvoZHjDY9DP0zV17iI85o90vRFXNccRw==}
     engines: {node: '>=12'}
 
-  y18n@4.0.3:
-    resolution: {integrity: sha512-JKhqTOwSrqNA1NY5lSztJ1GrBiUodLMmIZuLiDaMRJ+itFd+ABVE8XBjOvIWL+rSqNDC74LCSFmlb/U4UZ4hJQ==}
-
   y18n@5.0.8:
     resolution: {integrity: sha512-0pfFzegeDWJHJIAmTLRP2DwHjdF5s7jo9tuztdQxAhINCdvS+3nGINqPd00AphqJR/0LhANUS6/+7SCb98YOfA==}
     engines: {node: '>=10'}
@@ -10002,10 +9251,6 @@ packages:
     engines: {node: '>= 14.6'}
     hasBin: true
 
-  yargs-parser@18.1.3:
-    resolution: {integrity: sha512-o50j0JeToy/4K6OZcaQmW6lyXXKhq7csREXcDwk2omFPJEwUNOVtJKvmDr9EI1fAJZUyZcRF7kxGBWmRXudrCQ==}
-    engines: {node: '>=6'}
-
   yargs-parser@20.2.9:
     resolution: {integrity: sha512-y11nGElTIV+CT3Zv9t7VKl+Q3hTQoT9a1Qzezhhl6Rp21gJ/IVTW7Z3y9EWXhuUBC2Shnf+DX0antecpAwSP8w==}
     engines: {node: '>=10'}
@@ -10013,10 +9258,6 @@ packages:
   yargs-parser@21.1.1:
     resolution: {integrity: sha512-tVpsJW7DdjecAiFpbIB1e3qxIQsE6NoPc5/eTdrbbIC4h0LVsWhnoa3g+m2HclBIujHzsxZ4VJVA+GUuc2/LBw==}
     engines: {node: '>=12'}
-
-  yargs@15.4.1:
-    resolution: {integrity: sha512-aePbxDmcYW++PaqBsJ+HYUFwCdv4LVvdnhBy78E57PIor8/OVvhMrADFFEDh8DHDFRv/O9i3lPhsENjO7QX0+A==}
-    engines: {node: '>=8'}
 
   yargs@16.2.0:
     resolution: {integrity: sha512-D1mvvtDG0L5ft/jGWkLpG1+m0eQxOfaBvTNELraWj22wSVUMWxZUvYgJYcKh6jGGIkJFhH4IZPQhR4TKpc8mBw==}
@@ -10047,14 +9288,6 @@ packages:
   zip-stream@6.0.1:
     resolution: {integrity: sha512-zK7YHHz4ZXpW89AHXUPbQVGKI7uvkd3hzusTdotCg1UxyaVtg0zFJSTfW/Dq5f7OBBVnq6cZIaC8Ti4hb6dtCA==}
     engines: {node: '>= 14'}
-
-  zod-defaults@0.1.3:
-    resolution: {integrity: sha512-Cp4UjuVfXqwaOx8A5LlM0IRBZs8B7AXgF+XOZWF8CjMDhsY/Jki+y7VS4adVtQj9NNSsAPwylUlJp9INuxPEnA==}
-    peerDependencies:
-      zod: ^3.23.8
-
-  zod@3.25.76:
-    resolution: {integrity: sha512-gzUt/qt81nXsFGKIFcC3YnfEAx5NkunCfnDlvuBSSFS02bcXu4Lmea0AFIUwbLWxWPx3d9p8S5QoaujKcNQxcQ==}
 
   zrender@6.0.0:
     resolution: {integrity: sha512-41dFXEEXuJpNecuUQq6JlbybmnHaqqpGlbH1yxnA5V9MMP4SbohSVZsJIwz+zdjQXSSlR1Vc34EgH1zxyTDvhg==}
@@ -11806,8 +11039,6 @@ snapshots:
       '@eslint/core': 0.17.0
       levn: 0.4.1
 
-  '@faker-js/faker@9.9.0': {}
-
   '@floating-ui/core@1.7.3':
     dependencies:
       '@floating-ui/utils': 0.2.10
@@ -12265,8 +11496,6 @@ snapshots:
 
   '@polka/url@1.0.0-next.29': {}
 
-  '@popperjs/core@2.11.8': {}
-
   '@poppinss/colors@4.1.6':
     dependencies:
       kleur: 4.1.5
@@ -12554,23 +11783,9 @@ snapshots:
       postcss-selector-parser: 6.0.10
       tailwindcss: 3.4.19(yaml@2.8.2)
 
-  '@tanstack/match-sorter-utils@8.19.4':
-    dependencies:
-      remove-accents: 0.5.0
-
-  '@tanstack/query-core@5.90.12': {}
-
   '@tanstack/store@0.8.0': {}
 
   '@tanstack/virtual-core@3.13.13': {}
-
-  '@tanstack/vue-query@5.92.1(vue@3.5.26(typescript@5.9.3))':
-    dependencies:
-      '@tanstack/match-sorter-utils': 8.19.4
-      '@tanstack/query-core': 5.90.12
-      '@vue/devtools-api': 6.6.4
-      vue: 3.5.26(typescript@5.9.3)
-      vue-demi: 0.14.10(vue@3.5.26(typescript@5.9.3))
 
   '@tanstack/vue-store@0.8.0(vue@3.5.26(typescript@5.9.3))':
     dependencies:
@@ -12618,18 +11833,7 @@ snapshots:
 
   '@types/html-minifier-terser@7.0.2': {}
 
-  '@types/json-bigint@1.0.4': {}
-
   '@types/json-schema@7.0.15': {}
-
-  '@types/jsonwebtoken@9.0.10':
-    dependencies:
-      '@types/ms': 2.1.0
-      '@types/node': 25.0.3
-
-  '@types/lodash-es@4.17.12':
-    dependencies:
-      '@types/lodash': 4.17.21
 
   '@types/lodash.clonedeep@4.5.9':
     dependencies:
@@ -12651,8 +11855,6 @@ snapshots:
 
   '@types/minimatch@3.0.5': {}
 
-  '@types/ms@2.1.0': {}
-
   '@types/node@12.20.55': {}
 
   '@types/node@24.10.4':
@@ -12671,10 +11873,6 @@ snapshots:
     dependencies:
       postcss: 8.5.6
 
-  '@types/qrcode@1.5.6':
-    dependencies:
-      '@types/node': 25.0.3
-
   '@types/qs@6.14.0': {}
 
   '@types/readdir-glob@1.1.5':
@@ -12685,11 +11883,7 @@ snapshots:
 
   '@types/sortablejs@1.15.9': {}
 
-  '@types/tinycolor2@1.4.6': {}
-
   '@types/trusted-types@2.0.7': {}
-
-  '@types/validator@13.15.10': {}
 
   '@types/web-bluetooth@0.0.21': {}
 
@@ -12880,14 +12074,6 @@ snapshots:
 
   '@unrs/resolver-binding-win32-x64-msvc@1.11.1':
     optional: true
-
-  '@vee-validate/zod@4.15.1(vue@3.5.26(typescript@5.9.3))(zod@3.25.76)':
-    dependencies:
-      type-fest: 4.41.0
-      vee-validate: 4.15.1(vue@3.5.26(typescript@5.9.3))
-      zod: 3.25.76
-    transitivePeerDependencies:
-      - vue
 
   '@vercel/nft@0.30.4(rollup@4.54.0)':
     dependencies:
@@ -13205,32 +12391,9 @@ snapshots:
       '@vueuse/shared': 13.9.0(vue@3.5.26(typescript@5.9.3))
       vue: 3.5.26(typescript@5.9.3)
 
-  '@vueuse/core@14.1.0(vue@3.5.26(typescript@5.9.3))':
-    dependencies:
-      '@types/web-bluetooth': 0.0.21
-      '@vueuse/metadata': 14.1.0
-      '@vueuse/shared': 14.1.0(vue@3.5.26(typescript@5.9.3))
-      vue: 3.5.26(typescript@5.9.3)
-
-  '@vueuse/integrations@14.1.0(async-validator@4.2.5)(axios@1.13.2)(change-case@5.4.4)(focus-trap@7.7.0)(nprogress@0.2.0)(qrcode@1.5.4)(sortablejs@1.15.6)(vue@3.5.26(typescript@5.9.3))':
-    dependencies:
-      '@vueuse/core': 14.1.0(vue@3.5.26(typescript@5.9.3))
-      '@vueuse/shared': 14.1.0(vue@3.5.26(typescript@5.9.3))
-      vue: 3.5.26(typescript@5.9.3)
-    optionalDependencies:
-      async-validator: 4.2.5
-      axios: 1.13.2
-      change-case: 5.4.4
-      focus-trap: 7.7.0
-      nprogress: 0.2.0
-      qrcode: 1.5.4
-      sortablejs: 1.15.6
-
   '@vueuse/metadata@12.8.2': {}
 
   '@vueuse/metadata@13.9.0': {}
-
-  '@vueuse/metadata@14.1.0': {}
 
   '@vueuse/motion@3.0.3(magicast@0.5.1)(vue@3.5.26(typescript@5.9.3))':
     dependencies:
@@ -13253,10 +12416,6 @@ snapshots:
       - typescript
 
   '@vueuse/shared@13.9.0(vue@3.5.26(typescript@5.9.3))':
-    dependencies:
-      vue: 3.5.26(typescript@5.9.3)
-
-  '@vueuse/shared@14.1.0(vue@3.5.26(typescript@5.9.3))':
     dependencies:
       vue: 3.5.26(typescript@5.9.3)
 
@@ -13538,8 +12697,6 @@ snapshots:
     dependencies:
       is-windows: 1.0.2
 
-  bignumber.js@9.3.1: {}
-
   binary-extensions@2.3.0: {}
 
   bindings@1.5.0:
@@ -13585,8 +12742,6 @@ snapshots:
       update-browserslist-db: 1.2.3(browserslist@4.28.1)
 
   buffer-crc32@1.0.0: {}
-
-  buffer-equal-constant-time@1.0.1: {}
 
   buffer-from@1.1.2: {}
 
@@ -13669,8 +12824,6 @@ snapshots:
       tslib: 2.8.1
 
   camelcase-css@2.0.1: {}
-
-  camelcase@5.3.1: {}
 
   camelcase@6.3.0: {}
 
@@ -13807,23 +12960,11 @@ snapshots:
       slice-ansi: 5.0.0
       string-width: 7.2.0
 
-  clipboard@2.0.11:
-    dependencies:
-      good-listener: 1.2.2
-      select: 1.1.2
-      tiny-emitter: 2.1.0
-
   clipboardy@4.0.0:
     dependencies:
       execa: 8.0.1
       is-wsl: 3.1.0
       is64bit: 2.0.0
-
-  cliui@6.0.0:
-    dependencies:
-      string-width: 4.2.3
-      strip-ansi: 6.0.1
-      wrap-ansi: 6.2.0
 
   cliui@7.0.4:
     dependencies:
@@ -14246,8 +13387,6 @@ snapshots:
     dependencies:
       ms: 2.1.3
 
-  decamelize@1.2.0: {}
-
   deep-eql@5.0.2: {}
 
   deep-extend@0.6.0: {}
@@ -14282,8 +13421,6 @@ snapshots:
   defu@6.1.4: {}
 
   delayed-stream@1.0.0: {}
-
-  delegate@3.2.0: {}
 
   denque@2.1.0: {}
 
@@ -14334,8 +13471,6 @@ snapshots:
   diff-sequences@27.5.1: {}
 
   diff@8.0.2: {}
-
-  dijkstrajs@1.0.3: {}
 
   dir-glob@3.0.1:
     dependencies:
@@ -14419,10 +13554,6 @@ snapshots:
   duplexer@0.1.2: {}
 
   eastasianwidth@0.2.0: {}
-
-  ecdsa-sig-formatter@1.0.11:
-    dependencies:
-      safe-buffer: 5.2.1
 
   echarts@6.0.0:
     dependencies:
@@ -15078,11 +14209,6 @@ snapshots:
 
   flatted@3.3.3: {}
 
-  focus-trap@7.7.0:
-    dependencies:
-      tabbable: 6.3.0
-    optional: true
-
   follow-redirects@1.15.11: {}
 
   for-each@0.3.5:
@@ -15328,10 +14454,6 @@ snapshots:
   globjoin@0.1.4: {}
 
   globrex@0.1.2: {}
-
-  good-listener@1.2.2:
-    dependencies:
-      delegate: 3.2.0
 
   gopd@1.2.0: {}
 
@@ -15796,10 +14918,6 @@ snapshots:
 
   jsesc@3.1.0: {}
 
-  json-bigint@1.0.0:
-    dependencies:
-      bignumber.js: 9.3.1
-
   json-buffer@3.0.1: {}
 
   json-parse-even-better-errors@2.3.1: {}
@@ -15834,30 +14952,6 @@ snapshots:
   jsonparse@1.3.1: {}
 
   jsonpointer@5.0.1: {}
-
-  jsonwebtoken@9.0.3:
-    dependencies:
-      jws: 4.0.1
-      lodash.includes: 4.3.0
-      lodash.isboolean: 3.0.3
-      lodash.isinteger: 4.0.4
-      lodash.isnumber: 3.0.3
-      lodash.isplainobject: 4.0.6
-      lodash.isstring: 4.0.1
-      lodash.once: 4.1.1
-      ms: 2.1.3
-      semver: 7.7.3
-
-  jwa@2.0.1:
-    dependencies:
-      buffer-equal-constant-time: 1.0.1
-      ecdsa-sig-formatter: 1.0.11
-      safe-buffer: 5.2.1
-
-  jws@4.0.1:
-    dependencies:
-      jwa: 2.0.1
-      safe-buffer: 5.2.1
 
   keyv@4.5.4:
     dependencies:
@@ -16018,19 +15112,9 @@ snapshots:
 
   lodash.defaults@4.2.0: {}
 
-  lodash.includes@4.3.0: {}
-
   lodash.isarguments@3.1.0: {}
 
-  lodash.isboolean@3.0.3: {}
-
-  lodash.isinteger@4.0.4: {}
-
-  lodash.isnumber@3.0.3: {}
-
   lodash.isplainobject@4.0.6: {}
-
-  lodash.isstring@4.0.1: {}
 
   lodash.kebabcase@4.1.1: {}
 
@@ -16039,8 +15123,6 @@ snapshots:
   lodash.merge@4.6.2: {}
 
   lodash.mergewith@4.6.2: {}
-
-  lodash.once@4.1.1: {}
 
   lodash.snakecase@4.1.1: {}
 
@@ -16738,8 +15820,6 @@ snapshots:
 
   pluralize@8.0.0: {}
 
-  pngjs@5.0.0: {}
-
   popmotion@11.0.5:
     dependencies:
       framesync: 6.1.2
@@ -17268,12 +16348,6 @@ snapshots:
     dependencies:
       hookified: 1.14.0
 
-  qrcode@1.5.4:
-    dependencies:
-      dijkstrajs: 1.0.3
-      pngjs: 5.0.0
-      yargs: 15.4.1
-
   qs@6.14.0:
     dependencies:
       side-channel: 1.1.0
@@ -17433,13 +16507,9 @@ snapshots:
 
   relateurl@0.2.7: {}
 
-  remove-accents@0.5.0: {}
-
   require-directory@2.1.1: {}
 
   require-from-string@2.0.2: {}
-
-  require-main-filename@2.0.0: {}
 
   require-package-name@2.0.1: {}
 
@@ -17602,8 +16672,6 @@ snapshots:
       crypto-js: 4.2.0
       lz-string: 1.5.0
 
-  select@1.1.2: {}
-
   semver-compare@1.0.0: {}
 
   semver@5.7.2:
@@ -17649,8 +16717,6 @@ snapshots:
       send: 1.2.1
     transitivePeerDependencies:
       - supports-color
-
-  set-blocking@2.0.0: {}
 
   set-function-length@1.2.2:
     dependencies:
@@ -18114,9 +17180,6 @@ snapshots:
 
   system-architecture@0.1.0: {}
 
-  tabbable@6.3.0:
-    optional: true
-
   table@6.9.0:
     dependencies:
       ajv: 8.17.1
@@ -18180,28 +17243,6 @@ snapshots:
       minizlib: 3.1.0
       yallist: 5.0.0
 
-  tdesign-icons-vue-next@0.4.1(vue@3.5.26(typescript@5.9.3)):
-    dependencies:
-      '@babel/runtime': 7.28.4
-      vue: 3.5.26(typescript@5.9.3)
-
-  tdesign-vue-next@1.17.7(vue@3.5.26(typescript@5.9.3)):
-    dependencies:
-      '@babel/runtime': 7.28.4
-      '@popperjs/core': 2.11.8
-      '@types/lodash-es': 4.17.12
-      '@types/sortablejs': 1.15.9
-      '@types/tinycolor2': 1.4.6
-      '@types/validator': 13.15.10
-      dayjs: 1.11.19
-      lodash-es: 4.17.22
-      mitt: 3.0.1
-      sortablejs: 1.15.6
-      tdesign-icons-vue-next: 0.4.1(vue@3.5.26(typescript@5.9.3))
-      tinycolor2: 1.6.0
-      validator: 13.15.26
-      vue: 3.5.26(typescript@5.9.3)
-
   temp-dir@2.0.0: {}
 
   tempy@0.6.0:
@@ -18242,11 +17283,7 @@ snapshots:
 
   through@2.3.8: {}
 
-  tiny-emitter@2.1.0: {}
-
   tinybench@2.9.0: {}
-
-  tinycolor2@1.6.0: {}
 
   tinyexec@0.3.2: {}
 
@@ -18262,10 +17299,6 @@ snapshots:
   tinyrainbow@2.0.0: {}
 
   tinyspy@4.0.4: {}
-
-  tippy.js@6.3.7:
-    dependencies:
-      '@popperjs/core': 2.11.8
 
   to-regex-range@5.0.1:
     dependencies:
@@ -18600,8 +17633,6 @@ snapshots:
 
   util-deprecate@1.0.2: {}
 
-  validator@13.15.26: {}
-
   vee-validate@4.15.1(vue@3.5.26(typescript@5.9.3)):
     dependencies:
       '@vue/devtools-api': 7.7.9
@@ -18915,19 +17946,9 @@ snapshots:
       '@vue/devtools-api': 6.6.4
       vue: 3.5.26(typescript@5.9.3)
 
-  vue-json-viewer@3.0.4(vue@3.5.26(typescript@5.9.3)):
-    dependencies:
-      clipboard: 2.0.11
-      vue: 3.5.26(typescript@5.9.3)
-
   vue-router@4.6.4(vue@3.5.26(typescript@5.9.3)):
     dependencies:
       '@vue/devtools-api': 6.6.4
-      vue: 3.5.26(typescript@5.9.3)
-
-  vue-tippy@6.7.1(vue@3.5.26(typescript@5.9.3)):
-    dependencies:
-      tippy.js: 6.3.7
       vue: 3.5.26(typescript@5.9.3)
 
   vue-tsc@3.2.1(typescript@5.9.3):
@@ -19030,8 +18051,6 @@ snapshots:
       is-set: 2.0.3
       is-weakmap: 2.0.2
       is-weakset: 2.0.4
-
-  which-module@2.0.1: {}
 
   which-typed-array@1.1.19:
     dependencies:
@@ -19175,12 +18194,6 @@ snapshots:
       '@types/trusted-types': 2.0.7
       workbox-core: 7.4.0
 
-  wrap-ansi@6.2.0:
-    dependencies:
-      ansi-styles: 4.3.0
-      string-width: 4.2.3
-      strip-ansi: 6.0.1
-
   wrap-ansi@7.0.0:
     dependencies:
       ansi-styles: 4.3.0
@@ -19214,8 +18227,6 @@ snapshots:
 
   xml-name-validator@4.0.0: {}
 
-  y18n@4.0.3: {}
-
   y18n@5.0.8: {}
 
   yallist@3.1.1: {}
@@ -19233,28 +18244,9 @@ snapshots:
 
   yaml@2.8.2: {}
 
-  yargs-parser@18.1.3:
-    dependencies:
-      camelcase: 5.3.1
-      decamelize: 1.2.0
-
   yargs-parser@20.2.9: {}
 
   yargs-parser@21.1.1: {}
-
-  yargs@15.4.1:
-    dependencies:
-      cliui: 6.0.0
-      decamelize: 1.2.0
-      find-up: 4.1.0
-      get-caller-file: 2.0.5
-      require-directory: 2.1.1
-      require-main-filename: 2.0.0
-      set-blocking: 2.0.0
-      string-width: 4.2.3
-      which-module: 2.0.1
-      y18n: 4.0.3
-      yargs-parser: 18.1.3
 
   yargs@16.2.0:
     dependencies:
@@ -19300,12 +18292,6 @@ snapshots:
       archiver-utils: 5.0.2
       compress-commons: 6.0.2
       readable-stream: 4.7.0
-
-  zod-defaults@0.1.3(zod@3.25.76):
-    dependencies:
-      zod: 3.25.76
-
-  zod@3.25.76: {}
 
   zrender@6.0.0:
     dependencies:

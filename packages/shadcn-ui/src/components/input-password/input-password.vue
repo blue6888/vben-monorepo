@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref, useSlots } from 'vue';
 
-import { Eye, EyeOff } from '@web-core/icons';
+import { Eye, EyeOff } from '@web/icons';
 import { cn } from '@web-core/shared/utils';
 
 import { Input } from '../../ui';

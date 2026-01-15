@@ -28,7 +28,8 @@
     }
   },
   "dependencies": {
-    "@web-core/form-ui": "workspace:*",
+    "@vueuse/core": "catalog:",
+    "@vueuse/motion": "catalog:",
     "@web-core/shadcn-ui": "workspace:*",
     "@web-core/shared": "workspace:*",
     "@web/hooks": "workspace:*",
@@ -37,8 +38,6 @@
     "@web/preferences": "workspace:*",
     "@web/types": "workspace:*",
     "@web/utils": "workspace:*",
-    "@vueuse/core": "catalog:",
-    "@vueuse/motion": "catalog:",
     "echarts": "catalog:",
     "vue": "catalog:",
     "vxe-pc-ui": "catalog:",

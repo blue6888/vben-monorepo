@@ -1,18 +1,20 @@
 {
-  "name": "@web-core/layout-ui",
+  "name": "@web-core/shadcn-ui",
   "version": "5.5.9",
+  "#main": "./dist/index.mjs",
+  "#module": "./dist/index.mjs",
   "homepage": "https://github.com/vbenjs/vue-vben-admin",
   "bugs": "https://github.com/vbenjs/vue-vben-admin/issues",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/vbenjs/vue-vben-admin.git",
-    "directory": "packages/@web-core/uikit/layout-ui"
+    "directory": "packages/@web-core/uikit/shadcn-ui"
   },
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "build": "pnpm unbuild",
-    "prepublishOnly": "npm run build"
+    "#build": "pnpm unbuild",
+    "#prepublishOnly": "npm run build"
   },
   "files": [
     "dist"
@@ -20,29 +22,33 @@
   "sideEffects": [
     "**/*.css"
   ],
-  "main": "./dist/index.mjs",
-  "module": "./dist/index.mjs",
+  "main": "./src/index.ts",
+  "module": "./src/index.ts",
   "exports": {
     ".": {
       "types": "./src/index.ts",
       "development": "./src/index.ts",
-      "default": "./dist/index.mjs"
+      "default": "./src/index.ts",
+      "//default": "./dist/index.mjs"
     }
   },
   "publishConfig": {
     "exports": {
       ".": {
-        "default": "./dist/index.mjs"
+        "default": "./src/index.ts"
       }
     }
   },
   "dependencies": {
+    "@vueuse/core": "catalog:",
     "@web-core/composables": "workspace:*",
-    "@web-core/icons": "workspace:*",
-    "@web-core/shadcn-ui": "workspace:*",
     "@web-core/shared": "workspace:*",
     "@web-core/typings": "workspace:*",
-    "@vueuse/core": "catalog:",
+    "@web/icons": "workspace:*",
+    "class-variance-authority": "catalog:",
+    "lucide-vue-next": "catalog:",
+    "reka-ui": "catalog:",
+    "vee-validate": "catalog:",
     "vue": "catalog:"
   }
 }

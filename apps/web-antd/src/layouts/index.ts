@@ -1,6 +1,3 @@
 const BasicLayout = () => import('./basic.vue');
-const AuthPageLayout = () => import('./auth.vue');
 
-const IFrameView = () => import('@web/layouts').then((m) => m.IFrameView);
-
-export { AuthPageLayout, BasicLayout, IFrameView };
+export { BasicLayout };
