@@ -7,7 +7,7 @@ import {
   CardHeader,
   CardTitle,
   VbenIcon,
-} from '@vben-core/shadcn-ui';
+} from '@web-core/shadcn-ui';
 
 interface Props {
   items?: WorkbenchProjectItem[];

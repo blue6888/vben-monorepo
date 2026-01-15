@@ -14,7 +14,7 @@ import type {
   PreferencesButtonPositionType,
   TabsStyleType,
   ThemeModeType,
-} from '@vben-core/typings';
+} from '@web-core/typings';
 
 type SupportedLanguagesType = 'en-US' | 'zh-CN';
 

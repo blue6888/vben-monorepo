@@ -1,13 +1,13 @@
 import type { App } from 'vue';
 
-import type { LocaleSetupOptions, SupportedLanguagesType } from '@vben/locales';
+import type { LocaleSetupOptions, SupportedLanguagesType } from '@web/locales';
 
 import {
   $t,
   setupI18n as coreSetup,
   loadLocalesMapFromDir,
-} from '@vben/locales';
-import { preferences } from '@vben/preferences';
+} from '@web/locales';
+import { preferences } from '@web/preferences';
 
 import dayjs from 'dayjs';
 

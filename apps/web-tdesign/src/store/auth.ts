@@ -1,11 +1,11 @@
-import type { Recordable, UserInfo } from '@vben/types';
+import type { Recordable, UserInfo } from '@web/types';
 
 import { ref } from 'vue';
 import { useRouter } from 'vue-router';
 
-import { LOGIN_PATH } from '@vben/constants';
-import { preferences } from '@vben/preferences';
-import { resetAllStores, useAccessStore, useUserStore } from '@vben/stores';
+import { LOGIN_PATH } from '@web/constants';
+import { preferences } from '@web/preferences';
+import { resetAllStores, useAccessStore, useUserStore } from '@web/stores';
 
 import { defineStore } from 'pinia';
 

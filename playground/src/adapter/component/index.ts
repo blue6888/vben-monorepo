@@ -13,8 +13,8 @@ import type {
 
 import type { Component, Ref } from 'vue';
 
-import type { BaseFormComponentType } from '@vben/common-ui';
-import type { Recordable } from '@vben/types';
+import type { BaseFormComponentType } from '@web/common-ui';
+import type { Recordable } from '@web/types';
 
 import {
   defineAsyncComponent,
@@ -31,10 +31,10 @@ import {
   globalShareState,
   IconPicker,
   VCropper,
-} from '@vben/common-ui';
-import { IconifyIcon } from '@vben/icons';
-import { $t } from '@vben/locales';
-import { isEmpty } from '@vben/utils';
+} from '@web/common-ui';
+import { IconifyIcon } from '@web/icons';
+import { $t } from '@web/locales';
+import { isEmpty } from '@web/utils';
 
 import { message, Modal, notification } from 'ant-design-vue';
 

@@ -1,11 +1,11 @@
 import { createApp, watchEffect } from 'vue';
 
-import { registerAccessDirective } from '@vben/access';
-import { registerLoadingDirective } from '@vben/common-ui/es/loading';
-import { preferences } from '@vben/preferences';
-import { initStores } from '@vben/stores';
-import '@vben/styles';
-// import '@vben/styles/antd';
+import { registerAccessDirective } from '@web/access';
+import { registerLoadingDirective } from '@web/common-ui/es/loading';
+import { preferences } from '@web/preferences';
+import { initStores } from '@web/stores';
+import '@web/styles';
+// import '@web/styles/antd';
 // 引入组件库的少量全局样式变量
 
 import { useTitle } from '@vueuse/core';
@@ -53,14 +53,14 @@ async function bootstrap(namespace: string) {
   registerAccessDirective(app);
 
   // 初始化 tippy
-  const { initTippy } = await import('@vben/common-ui/es/tippy');
+  const { initTippy } = await import('@web/common-ui/es/tippy');
   initTippy(app);
 
   // 配置路由及路由守卫
   app.use(router);
 
   // 配置Motion插件
-  const { MotionPlugin } = await import('@vben/plugins/motion');
+  const { MotionPlugin } = await import('@web/plugins/motion');
   app.use(MotionPlugin);
 
   // 动态更新标题

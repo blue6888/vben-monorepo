@@ -1,4 +1,4 @@
-import { getScrollbarWidth, needsScrollbar } from '@vben-core/shared/utils';
+import { getScrollbarWidth, needsScrollbar } from '@web-core/shared/utils';
 
 import {
   useScrollLock as _useScrollLock,

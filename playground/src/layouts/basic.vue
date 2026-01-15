@@ -1,22 +1,22 @@
 <script lang="ts" setup>
-import type { NotificationItem } from '@vben/layouts';
+import type { NotificationItem } from '@web/layouts';
 
 import { computed, onBeforeMount, ref, watch } from 'vue';
 import { useRouter } from 'vue-router';
 
-import { AuthenticationLoginExpiredModal } from '@vben/common-ui';
-import { VBEN_DOC_URL, VBEN_GITHUB_URL } from '@vben/constants';
-import { useWatermark } from '@vben/hooks';
-import { BookOpenText, CircleHelp, SvgGithubIcon } from '@vben/icons';
+import { AuthenticationLoginExpiredModal } from '@web/common-ui';
+import { VBEN_DOC_URL, VBEN_GITHUB_URL } from '@web/constants';
+import { useWatermark } from '@web/hooks';
+import { BookOpenText, CircleHelp, SvgGithubIcon } from '@web/icons';
 import {
   BasicLayout,
   LockScreen,
   Notification,
   UserDropdown,
-} from '@vben/layouts';
-import { preferences } from '@vben/preferences';
-import { useAccessStore, useTabbarStore, useUserStore } from '@vben/stores';
-import { openWindow } from '@vben/utils';
+} from '@web/layouts';
+import { preferences } from '@web/preferences';
+import { useAccessStore, useTabbarStore, useUserStore } from '@web/stores';
+import { openWindow } from '@web/utils';
 
 import { $t } from '#/locales';
 import { useAuthStore } from '#/store';

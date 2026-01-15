@@ -8,8 +8,8 @@ import {
   VBEN_LOGO_URL,
   VBEN_NAIVE_PREVIEW_URL,
   VBEN_TD_PREVIEW_URL,
-} from '@vben/constants';
-import { SvgAntdvLogoIcon, SvgTDesignIcon } from '@vben/icons';
+} from '@web/constants';
+import { SvgAntdvLogoIcon, SvgTDesignIcon } from '@web/icons';
 
 import { IFrameView } from '#/layouts';
 import { $t } from '#/locales';

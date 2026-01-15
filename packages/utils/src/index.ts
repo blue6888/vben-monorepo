@@ -1,4 +1,4 @@
 export * from './helpers';
-export * from '@vben-core/shared/cache';
-export * from '@vben-core/shared/color';
-export * from '@vben-core/shared/utils';
+export * from '@web-core/shared/cache';
+export * from '@web-core/shared/color';
+export * from '@web-core/shared/utils';

@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import type { MenuRecordRaw } from '@vben-core/typings';
+import type { MenuRecordRaw } from '@web-core/typings';
 
 import type { NormalMenuProps } from './normal-menu';
 
-import { useNamespace } from '@vben-core/composables';
-import { VbenIcon } from '@vben-core/shadcn-ui';
+import { useNamespace } from '@web-core/composables';
+import { VbenIcon } from '@web-core/shadcn-ui';
 
 interface Props extends NormalMenuProps {}
 

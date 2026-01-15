@@ -1,4 +1,4 @@
-import type { Recordable } from '@vben/types';
+import type { Recordable } from '@web/types';
 
 import { requestClient } from '#/api/request';
 

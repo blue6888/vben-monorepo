@@ -1,6 +1,6 @@
 <script lang="ts" setup>
-import { VbenSpinner } from '@vben-core/shadcn-ui';
-import { cn } from '@vben-core/shared/utils';
+import { VbenSpinner } from '@web-core/shadcn-ui';
+import { cn } from '@web-core/shared/utils';
 
 interface SpinnerProps {
   class?: string;

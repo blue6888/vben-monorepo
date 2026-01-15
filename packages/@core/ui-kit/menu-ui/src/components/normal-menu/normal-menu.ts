@@ -1,4 +1,4 @@
-import type { MenuRecordRaw } from '@vben-core/typings';
+import type { MenuRecordRaw } from '@web-core/typings';
 
 interface NormalMenuProps {
   /**

@@ -2,23 +2,23 @@
 import type { SetupContext } from 'vue';
 import type { RouteLocationNormalizedLoaded } from 'vue-router';
 
-import type { MenuRecordRaw } from '@vben/types';
+import type { MenuRecordRaw } from '@web/types';
 
 import { computed, onMounted, useSlots, watch } from 'vue';
 import { useRoute } from 'vue-router';
 
-import { useRefresh } from '@vben/hooks';
-import { $t, i18n } from '@vben/locales';
+import { useRefresh } from '@web/hooks';
+import { $t, i18n } from '@web/locales';
 import {
   preferences,
   updatePreferences,
   usePreferences,
-} from '@vben/preferences';
-import { useAccessStore, useTabbarStore, useTimezoneStore } from '@vben/stores';
-import { cloneDeep, mapTree } from '@vben/utils';
+} from '@web/preferences';
+import { useAccessStore, useTabbarStore, useTimezoneStore } from '@web/stores';
+import { cloneDeep, mapTree } from '@web/utils';
 
-import { VbenAdminLayout } from '@vben-core/layout-ui';
-import { VbenBackTop, VbenLogo } from '@vben-core/shadcn-ui';
+import { VbenAdminLayout } from '@web-core/layout-ui';
+import { VbenBackTop, VbenLogo } from '@web-core/shadcn-ui';
 
 import { Breadcrumb, CheckUpdates, Preferences } from '../widgets';
 import { LayoutContent, LayoutContentSpinner } from './content';

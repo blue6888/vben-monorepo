@@ -3,7 +3,7 @@ import type { UploadFile } from 'ant-design-vue';
 
 import { h, ref, toRaw } from 'vue';
 
-import { Page } from '@vben/common-ui';
+import { Page } from '@web/common-ui';
 
 import { useDebounceFn } from '@vueuse/core';
 import { Button, Card, message, Spin, Tag } from 'ant-design-vue';

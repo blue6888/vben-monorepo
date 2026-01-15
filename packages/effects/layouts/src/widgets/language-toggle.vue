@@ -1,12 +1,12 @@
 <script setup lang="ts">
-import type { SupportedLanguagesType } from '@vben/locales';
+import type { SupportedLanguagesType } from '@web/locales';
 
-import { SUPPORT_LANGUAGES } from '@vben/constants';
-import { Languages } from '@vben/icons';
-import { loadLocaleMessages } from '@vben/locales';
-import { preferences, updatePreferences } from '@vben/preferences';
+import { SUPPORT_LANGUAGES } from '@web/constants';
+import { Languages } from '@web/icons';
+import { loadLocaleMessages } from '@web/locales';
+import { preferences, updatePreferences } from '@web/preferences';
 
-import { VbenDropdownRadioMenu, VbenIconButton } from '@vben-core/shadcn-ui';
+import { VbenDropdownRadioMenu, VbenIconButton } from '@web-core/shadcn-ui';
 
 defineOptions({
   name: 'LanguageToggle',

@@ -15,8 +15,8 @@ import {
   VbenInputPassword,
   VbenPinInput,
   VbenSelect,
-} from '@vben-core/shadcn-ui';
-import { globalShareState } from '@vben-core/shared/global-state';
+} from '@web-core/shadcn-ui';
+import { globalShareState } from '@web-core/shared/global-state';
 
 import { defineRule } from 'vee-validate';
 

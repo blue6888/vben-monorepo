@@ -1,11 +1,11 @@
 <script lang="ts" setup>
-import type { VbenFormSchema } from '@vben/common-ui';
-import type { Recordable } from '@vben/types';
+import type { VbenFormSchema } from '@web/common-ui';
+import type { Recordable } from '@web/types';
 
 import { computed, ref } from 'vue';
 
-import { AuthenticationForgetPassword, z } from '@vben/common-ui';
-import { $t } from '@vben/locales';
+import { AuthenticationForgetPassword, z } from '@web/common-ui';
+import { $t } from '@web/locales';
 
 defineOptions({ name: 'ForgetPassword' });
 
