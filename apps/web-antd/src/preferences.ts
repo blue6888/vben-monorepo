@@ -1,4 +1,4 @@
-import { defineOverridesPreferences } from '@vben/preferences';
+import { defineOverridesPreferences } from '@web/preferences';
 
 /**
  * @description 项目配置文件

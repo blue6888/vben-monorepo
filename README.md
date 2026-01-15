@@ -124,7 +124,7 @@ Support modern browsers, not IE
 
 ## Maintainer
 
-[@Vben](https://github.com/anncwb)
+[@web](https://github.com/anncwb)
 
 ## Star History
 

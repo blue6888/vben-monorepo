@@ -124,7 +124,7 @@ pnpm build
 
 ## 维护者
 
-[@Vben](https://github.com/anncwb)
+[@web](https://github.com/anncwb)
 
 ## Star 历史
 

@@ -1,6 +1,5 @@
-import { execaCommand, getPackages } from '@vben/node-utils';
-
 import { cancel, isCancel, select } from '@clack/prompts';
+import { execaCommand, getPackages } from '@web/node-utils';
 
 interface RunOptions {
   command?: string;
@@ -17,7 +16,7 @@ export async function run(options: RunOptions) {
   console.log('🚀 ~ run ~ packages:', packages);
   // const appPkgs = await findApps(process.cwd(), packages);
   // const websitePkg = packages.find(
-  //   (item) => item.packageJson.name === '@vben/website',
+  //   (item) => item.packageJson.name === '@web/website',
   // );
 
   // 只显示有对应命令的包

@@ -1,4 +1,4 @@
 export default {
-  extends: ['@vben/stylelint-config'],
+  extends: ['@web/stylelint-config'],
   root: true,
 };

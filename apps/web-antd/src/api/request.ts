@@ -1,17 +1,17 @@
 /**
  * 该文件可自行根据业务逻辑进行调整
  */
-import type { RequestClientOptions } from '@vben/request';
+import type { RequestClientOptions } from '@web/request';
 
-import { useAppConfig } from '@vben/hooks';
-import { preferences } from '@vben/preferences';
+import { useAppConfig } from '@web/hooks';
+import { preferences } from '@web/preferences';
 import {
   authenticateResponseInterceptor,
   defaultResponseInterceptor,
   errorMessageResponseInterceptor,
   RequestClient,
-} from '@vben/request';
-import { useAccessStore } from '@vben/stores';
+} from '@web/request';
+import { useAccessStore } from '@web/stores';
 
 import { message } from 'ant-design-vue';
 

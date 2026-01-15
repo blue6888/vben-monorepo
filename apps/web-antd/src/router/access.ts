@@ -1,10 +1,10 @@
 import type {
   ComponentRecordType,
   GenerateMenuAndRoutesOptions,
-} from '@vben/types';
+} from '@web/types';
 
-import { generateAccessible } from '@vben/access';
-import { preferences } from '@vben/preferences';
+import { generateAccessible } from '@web/access';
+import { preferences } from '@web/preferences';
 
 import { message } from 'ant-design-vue';
 

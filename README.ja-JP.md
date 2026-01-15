@@ -124,7 +124,7 @@ pnpm build
 
 ## メンテナー
 
-[@Vben](https://github.com/anncwb)
+[@web](https://github.com/anncwb)
 
 ## スター歴史
 
