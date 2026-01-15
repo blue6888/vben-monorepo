@@ -1,1 +1,0 @@
-import '@web-core/design';

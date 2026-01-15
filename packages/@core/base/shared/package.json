@@ -68,10 +68,6 @@
         "types": "./dist/cache/index.d.ts",
         "default": "./dist/cache/index.mjs"
       },
-      "./store": {
-        "types": "./dist/store.d.ts",
-        "default": "./dist/store.mjs"
-      },
       "./global-state": {
         "types": "./dist/global-state.d.ts",
         "default": "./dist/global-state.mjs"
