@@ -7,12 +7,14 @@ interface RunOptions {
 }
 
 export async function run(options: RunOptions) {
+  console.log('🚀 ~ run ~ options:', options);
   const { command } = options;
   if (!command) {
     console.error('Please enter the command to run');
     process.exit(1);
   }
   const { packages } = await getPackages();
+  console.log('🚀 ~ run ~ packages:', packages);
   // const appPkgs = await findApps(process.cwd(), packages);
   // const websitePkg = packages.find(
   //   (item) => item.packageJson.name === '@vben/website',
